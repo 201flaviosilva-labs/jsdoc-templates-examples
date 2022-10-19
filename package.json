@@ -9,13 +9,15 @@
     "-": "echo 'jsDoc templates'",
     "jsDoc": "jsdoc -c ./JSDocConfigs/jsdoc.conf.json",
     "cleanJsdocTheme": "jsdoc -c ./JSDocConfigs/cleanJsdocTheme.conf.json",
+    "jaguarjsJSDoc": "jsdoc -c ./JSDocConfigs/jaguarjsJSDoc.conf.json",
     "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.conf.json",
     "--": "echo 'build'",
-    "doc-all": "npm run jsDoc && npm run cleanJsdocTheme && npm run TUIJSDocTemplate",
+    "doc-all": "npm run jsDoc && npm run cleanJsdocTheme && npm run jaguarjsJSDoc && npm run TUIJSDocTemplate",
     "build": "npm run clear && npm run doc-all && cp index.html build/"
   },
   "devDependencies": {
     "clean-jsdoc-theme": "^4.1.8",
+    "jaguarjs-jsdoc": "^1.1.0",
     "jsdoc": "^3.6.11",
     "tui-jsdoc-template": "^1.2.2"
   },
