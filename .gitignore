@@ -1,3 +1,6 @@
+_ignore
+build
+
 # Logs
 logs
 *.log

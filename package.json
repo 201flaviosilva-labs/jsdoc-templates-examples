@@ -1,0 +1,32 @@
+{
+  "name": "jsdoc-templates-examples",
+  "version": "1.0.0",
+  "description": "Just testing some JSDoc templates",
+  "main": "index.js",
+  "homepage": "https://github.com/201flaviosilva-labs/jsdoc-templates-examples#readme",
+  "scripts": {
+    "clear": "rm -rf types && rm -rf docs && rm -rf build",
+    "-": "echo 'jsDoc templates'",
+    "jsDoc": "jsdoc -c ./JSDocConfigs/jsdoc.conf.json",
+    "cleanJsdocTheme": "jsdoc -c ./JSDocConfigs/cleanJsdocTheme.conf.json",
+    "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.conf.json",
+    "--": "echo 'build'",
+    "doc-all": "npm run jsDoc && npm run cleanJsdocTheme && npm run TUIJSDocTemplate",
+    "build": "npm run clear && npm run doc-all && cp index.html build/"
+  },
+  "devDependencies": {
+    "clean-jsdoc-theme": "^4.1.8",
+    "jsdoc": "^3.6.11",
+    "tui-jsdoc-template": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/201flaviosilva-labs/jsdoc-templates-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/201flaviosilva-labs/jsdoc-templates-examples/issues"
+  }
+}
