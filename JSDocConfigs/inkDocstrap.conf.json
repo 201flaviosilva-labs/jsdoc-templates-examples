@@ -26,14 +26,14 @@
     "dateFormat": "DD MM YYYY",
     "syntaxTheme": "dark",
     "sort": true,
-    "search": true
+    "search": true,
+    "template": "node_modules/ink-docstrap"
   },
   "opts": {
     "destination": "build/inkDocstrap",
     "encoding": "utf8",
     "verbose": true,
     "recurse": true,
-    "readme": "README.md",
-    "template": "node_modules/ink-docstrap"
+    "readme": "README.md"
   }
 }
