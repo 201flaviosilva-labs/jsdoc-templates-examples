@@ -1,0 +1,39 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+
+    "systemName": "JSDoc Templates Examples",
+    "footer": "Template: https://github.com/docstrap/docstrap",
+    "copyright": "© 201flaviosilva",
+    "navType": "vertical",
+    "theme": "cyborg",
+    "linenums": "true",
+    "collapseSymbols": "false",
+    "inverseNav": "false",
+    "outputSourceFiles": "true",
+    "outputSourcePath": "true",
+    "dateFormat": "DD MM YYYY",
+    "syntaxTheme": "dark",
+    "sort": true,
+    "search": true
+  },
+  "opts": {
+    "destination": "build/inkDocstrap",
+    "encoding": "utf8",
+    "verbose": true,
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/ink-docstrap"
+  }
+}
