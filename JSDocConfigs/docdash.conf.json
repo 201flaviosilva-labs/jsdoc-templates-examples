@@ -1,0 +1,39 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "destination": "build/docdash",
+    "encoding": "utf8",
+    "verbose": true,
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/docdash"
+  },
+  "docdash": {
+    "static": true,
+    "search": true,
+    "commonNav": true,
+    "typedefs": true,
+    "private": true,
+    "menu": {
+      "Project Website": {
+        "href": "https://myproject.com",
+        "target": "_blank",
+        "class": "menu-item",
+        "id": "website_link"
+      }
+    }
+  }
+}
