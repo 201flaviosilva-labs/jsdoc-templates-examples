@@ -5,7 +5,7 @@ import Rectangle from "./Rectangle.js";
 /**
  * @namespace Objects
  * 
- * @property {Objects.GameObjectBase} ObjectBase
+ * @property {Objects.ObjectBase} ObjectBase
  * 
  * @property {Objects.Circle} Circle
  * @property {Objects.Rectangle} Rectangle
