@@ -28,8 +28,8 @@
     "typedefs": true,
     "private": true,
     "menu": {
-      "Project Website": {
-        "href": "https://myproject.com",
+      "GitHub": {
+        "href": "https://github.com/201flaviosilva-labs/jsdoc-templates-examples",
         "target": "_blank",
         "class": "menu-item",
         "id": "website_link"

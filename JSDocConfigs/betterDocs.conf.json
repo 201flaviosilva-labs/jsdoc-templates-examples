@@ -1,0 +1,35 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "search": true,
+    "better-docs": {
+      "name": "JSDoc Templates Examples",
+      "title": "JSDoc Templates Examples",
+      "navLinks": [
+        {
+          "label": "Github",
+          "href": "https://github.com/201flaviosilva-labs/jsdoc-templates-examples"
+        }
+      ]
+    }
+  },
+  "opts": {
+    "destination": "build/betterDocs",
+    "encoding": "utf8",
+    "verbose": true,
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/better-docs"
+  }
+}
