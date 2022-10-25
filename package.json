@@ -9,6 +9,7 @@
     "-": "echo 'jsDoc templates'",
     "jsDoc": "jsdoc -c ./JSDocConfigs/_jsdoc.json",
     "betterDocs": "jsdoc -c ./JSDocConfigs/betterDocs.json",
+    "braintreeJsdocTemplate": "jsdoc -c ./JSDocConfigs/braintreeJsdocTemplate.json",
     "cleanJsdocTheme": "jsdoc -c ./JSDocConfigs/cleanJsdocTheme.json",
     "docdash": "jsdoc -c ./JSDocConfigs/docdash.json",
     "foodoc": "jsdoc -c ./JSDocConfigs/foodoc.json -t ./node_modules/foodoc/template",
@@ -20,11 +21,12 @@
     "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.json",
     "ubJsdoc": "jsdoc -c ./JSDocConfigs/ubJsdoc.json",
     "--": "echo 'build'",
-    "doc-all": "npm run jsDoc && npm run betterDocs && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run lokeJsdocTheme && npm run minami && npm run TUIJSDocTemplate && npm run ubJsdoc",
+    "doc-all": "npm run jsDoc && npm run betterDocs && npm run braintreeJsdocTemplate && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run lokeJsdocTheme && npm run minami && npm run TUIJSDocTemplate && npm run ubJsdoc",
     "build": "npm run clear && npm run doc-all && cp index.html build/"
   },
   "devDependencies": {
     "better-docs": "^2.7.2",
+    "braintree-jsdoc-template": "^3.3.0",
     "clean-jsdoc-theme": "^4.1.8",
     "docdash": "^1.2.0",
     "foodoc": "^0.0.9",
