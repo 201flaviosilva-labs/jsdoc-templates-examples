@@ -9,5 +9,22 @@
  * 
  * @param {string} str - the text to transform
  * @returns {string}
+ * 
+ * @function stringToCapitalize
  */
 export function stringToCapitalize(str) { return str.charAt(0).toUpperCase() + str.slice(1); }
+
+/**
+ * Change a given capitalized text to a normal text
+ * 
+ * @example capitalizeToNormal("beep"); // beep
+ * @example capitalizeToNormal("Beep"); // beep
+ * @example capitalizeToNormal("beep boop"); // beep boop
+ * @example capitalizeToNormal("beep Boop"); // beep Boop
+ * 
+ * @param {string} str - the text to transform
+ * @returns {string}
+ * 
+ * @function capitalizeToNormal
+ */
+export function capitalizeToNormal(str) { return str.charAt(0).toLowerCase() + str.slice(1); }

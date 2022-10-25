@@ -1,4 +1,4 @@
-import Object from "./Object.js";
+import ObjectBase from "./ObjectBase.js";
 
 /**
  * @param {number} x - The horizontal position of this rectangle
@@ -16,11 +16,11 @@ import Object from "./Object.js";
  * const rect = new Rectangle(400, 300, 75, 50, "#ff0000", 0x00ff00);
  * 
  * @class Rectangle
- * @extends Object
+ * @extends Objects.ObjectBase
  * @constructors
  * @memberof Objects
  */
-export default class Rectangle extends Object {
+export default class Rectangle extends ObjectBase {
 	constructor(x, y, width = 100, height = 100, fillColor = "#ffffff", strokeColor = "#000000") {
 		super(x, y, fillColor, strokeColor);
 
@@ -33,7 +33,7 @@ export default class Rectangle extends Object {
 	 * Sets the X position of the rectangle.
 	 * 
 	 * @param {number} x - The horizontal position of this Rectangle in the world.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	set x(x) { this.setX(x); }
 
@@ -42,19 +42,19 @@ export default class Rectangle extends Object {
 	 * Gets the Y position of the rectangle.
 	 * 
 	 * @param {number} y - The vertical position of this Rectangle in the world.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	set y(y) { this.setY(y); }
 
 	/**
 	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	get x() { return this._x - this.width * this.origin.x * this.scale.x; }
 
 	/**
 	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	get y() { return this._y - this.height * this.origin.y * this.scale.y; }
 
@@ -64,7 +64,7 @@ export default class Rectangle extends Object {
 	 * Returns the bottom side position of the rectangle.
 	 * 
 	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	getBottom() { return this.y + this.height; }
 
@@ -74,7 +74,7 @@ export default class Rectangle extends Object {
 	 * 
 	 * 
 	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	getRight() { return this.x + this.width; }
 
@@ -86,7 +86,7 @@ export default class Rectangle extends Object {
 	 * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5
 	 * 
 	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	getCenterX() { return this.x + this.width / 2; }
 
@@ -98,7 +98,7 @@ export default class Rectangle extends Object {
 	 * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5
 	 * 
 	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	getCenterY() { return this.y + this.height / 2; }
 
@@ -111,7 +111,7 @@ export default class Rectangle extends Object {
 	 * 
 	 * @param {number} width - The new width of this Rectangle.
 	 * @returns {Rectangle} This Rectangle.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	setWidth(width) {
 		this.setSize(width, this.height);
@@ -127,7 +127,7 @@ export default class Rectangle extends Object {
 	 * 
 	 * @param {number} height - The new height of this Rectangle.
 	 * @returns {Rectangle} This Rectangle.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	setHeight(height) {
 		this.setSize(this.width, height);
@@ -144,7 +144,7 @@ export default class Rectangle extends Object {
 	 * @param {number} width - The new width of this Rectangle.
 	 * @param {number} height - The new height of this Rectangle.
 	 * @returns {Rectangle} This Rectangle.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	setSize(width, height = width) {
 		this.width = width;
@@ -160,7 +160,7 @@ export default class Rectangle extends Object {
 	 * new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }
 	 * 
 	 * @returns {Object} The bounding box of this Rectangle.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 */
 	getBounds() { return { x: this.x, y: this.y, width: this.width, height: this.height }; }
 
@@ -172,7 +172,7 @@ export default class Rectangle extends Object {
 	 * new Rectangle(0, 0, 100, 100).getArea(); // 10000
 	 * 
 	 * @returns {number} The area of this Rectangle.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 * @readonly
 	 */
 	getArea() { return this.width * this.height; }
@@ -185,7 +185,7 @@ export default class Rectangle extends Object {
 	 * new Rectangle(0, 0, 100, 100).getPerimeter(); // 200
 	 * 
 	 * @returns {number} The perimeter of this Rectangle.
-	 * @memberof Rectangle
+	 * @memberof Objects.Rectangle
 	 * @readonly
 	 */
 	getPerimeter() { return 2 * (this.width + this.height); }

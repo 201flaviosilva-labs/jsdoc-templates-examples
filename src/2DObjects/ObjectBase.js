@@ -10,17 +10,17 @@
  * Use this class to extend your own objects.
  * 
  * @example
- * class MyObject extends Object {
+ * class MyObject extends ObjectBase {
  * 	constructor(x, y, fillColor, strokeColor, ...args) {
  * 		super(x, y, fillColor, strokeColor);
  * 	}
  * }
  * 
- * @class Object
+ * @class ObjectBase
  * @constructors
  * @memberof Objects
  */
-export default class Object {
+export default class ObjectBase {
 	constructor(x, y, fillColor, strokeColor) {
 		this.id = Math.random();
 		this.name = `Obj - ${this.id}`;
@@ -49,8 +49,7 @@ export default class Object {
 	 * 
 	 * @param {string} name - The name of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setName(name) {
 		this.name = name;
 		return this;
@@ -65,8 +64,7 @@ export default class Object {
 	 * 
 	 * @param {number} x - The horizontal position of the object in the world.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setX(x) {
 		this.setPosition(x + (this.width || this.radius) * this.origin.x, this._y);
 		return this;
@@ -81,8 +79,7 @@ export default class Object {
 	 * 
 	 * @param {number} y - The vertical position of the object in the world.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setY(y) {
 		this.setPosition(this._x, y + (this.height || this.radius) * this.origin.y);
 		return this;
@@ -99,8 +96,7 @@ export default class Object {
 	 * @param {number} y - The vertical position of the object in the world.
 	 * @param {number} z - The Z position of the object in the world.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setPosition(x, y) {
 		this.lastPosition = { x: this.x, y: this.y };
 
@@ -118,8 +114,7 @@ export default class Object {
 	 * 
 	 * @param {number} rotation - The rotation of the object in the world in radians.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setRotation(rotation) {
 		this.rotation = rotation;
 		this.angle = UtilsMathInstance.radiansToDegrees(rotation);
@@ -135,8 +130,7 @@ export default class Object {
 	 * 
 	 * @param {number} angle - The angle of the object in the world in degrees.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setAngle(angle) {
 		this.angle = angle;
 		this.rotation = UtilsMathInstance.degreesToRadians(angle);
@@ -152,8 +146,7 @@ export default class Object {
 	 * 
 	 * @param {number} scaleX - The horizontal scale of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setScaleX(x) {
 		this.setScale(x, this.scale.y);
 		return this;
@@ -168,8 +161,7 @@ export default class Object {
 	 * 
 	 * @param {number} scaleY - The vertical scale of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setScaleY(y) {
 		this.setScale(this.scale.x, y);
 		return this;
@@ -184,8 +176,7 @@ export default class Object {
 	 * 
 	 * @param {number} scale - The scale of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setScale(x = 0, y = x) {
 		this.scale = { x, y };
 		return this;
@@ -200,8 +191,7 @@ export default class Object {
 	 * 
 	 * @param {string} color - The fill color of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setFillColor(fillColor) {
 		this.fillColor = fillColor;
 		return this;
@@ -216,8 +206,7 @@ export default class Object {
 	 * 
 	 * @param {string} color - The stroke color of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setStrokeColor(strokeColor) {
 		this.strokeColor = strokeColor;
 		return this;
@@ -232,8 +221,7 @@ export default class Object {
 	 * 
 	 * @param {number} width - The stroke width of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setStrokeWidth(strokeWidth) {
 		this.strokeWidth = strokeWidth;
 		return this;
@@ -248,8 +236,7 @@ export default class Object {
 	 * 
 	 * @param {boolean} visible - The visibility of the object.
 	 * @returns {Object}
-	 * @memberof Object
-	 */
+	 * @memberof Objects.ObjectBase	 */
 	setVisible(isVisible) {
 		this.visible = isVisible;
 		return this;

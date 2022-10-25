@@ -1,19 +1,25 @@
 import Objects from "./2DObjects/Objects";
 import * as Maths from "./Maths/index.js";
 
-import { Fibonacci } from "./Fibonacci.js";
+import { FIFO } from "./FIFO";
+import { LIFO } from "./LIFO";
 
-import { stringToCapitalize } from "./capitalizeCase.js";
-import { decimal2Binary } from "./decimal2Binary.js";
-import { stringToSnakeCase } from "./snakeCase.js";
+import { stringToCamelCase, camelCaseToNormal } from "./camelCase.js";
+import { stringToCapitalize, capitalizeToNormal } from "./capitalizeCase.js";
+import { stringToKebabCase, kebabCaseToNormal } from "./kebabCase.js";
+import { stringToScreamingSnakeCase, screamingSnakeCaseToNormal, screamingSnakeCaseToNormalDeprecated } from "./screamingSnakeCase.js";
+import { stringToSnakeCase, snakeCaseToNormal } from "./snakeCase.js";
 
 export {
 	Objects,
 	Maths,
 
-	Fibonacci,
+	FIFO,
+	LIFO,
 
-	stringToCapitalize,
-	decimal2Binary,
-	stringToSnakeCase,
+	stringToCamelCase, camelCaseToNormal,
+	stringToCapitalize, capitalizeToNormal,
+	stringToKebabCase, kebabCaseToNormal,
+	stringToScreamingSnakeCase, screamingSnakeCaseToNormal, screamingSnakeCaseToNormalDeprecated,
+	stringToSnakeCase, snakeCaseToNormal,
 }

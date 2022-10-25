@@ -1,4 +1,4 @@
-import ObjectBase from "./Object.js";
+import ObjectBase from "./ObjectBase.js";
 import Circle from "./Circle.js";
 import Rectangle from "./Rectangle.js";
 
