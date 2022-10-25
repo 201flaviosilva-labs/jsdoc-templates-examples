@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Just testing some JSDoc templates",
   "main": "index.js",
-  "homepage": "https://github.com/201flaviosilva-labs/jsdoc-templates-examples#readme",
+  "homepage": "https://201flaviosilva-labs.github.io/jsdoc-templates-examples/",
   "scripts": {
     "clear": "rm -rf build",
     "-": "echo 'jsDoc templates'",
@@ -17,8 +17,9 @@
     "jsdocBaseline": "jsdoc -c ./JSDocConfigs/jsdocBaseline.conf.json",
     "minami": "jsdoc -c ./JSDocConfigs/minami.conf.json",
     "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.conf.json",
+    "ubJsdoc": "jsdoc -c ./JSDocConfigs/ubJsdoc.conf.json",
     "--": "echo 'build'",
-    "doc-all": "npm run jsDoc && npm run betterDocs && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run minami && npm run TUIJSDocTemplate",
+    "doc-all": "npm run jsDoc && npm run betterDocs && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run minami && npm run TUIJSDocTemplate && npm run ubJsdoc",
     "build": "npm run clear && npm run doc-all && cp index.html build/"
   },
   "devDependencies": {
@@ -31,7 +32,8 @@
     "jsdoc": "^3.6.11",
     "jsdoc-baseline": "^0.1.5",
     "minami": "^1.2.3",
-    "tui-jsdoc-template": "^1.2.2"
+    "tui-jsdoc-template": "^1.2.2",
+    "ub-jsdoc": "^3.1.4"
   },
   "repository": {
     "type": "git",

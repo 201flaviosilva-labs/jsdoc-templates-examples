@@ -1,0 +1,38 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "hideAuthor": false,
+    "default": {
+      "outputSourceFiles": true
+    }
+  },
+  "opts": {
+    "destination": "build/ubJsdoc",
+    "encoding": "utf8",
+    "verbose": true,
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/ub-jsdoc"
+  },
+  "extendedConfig": {
+    "navbar": {
+      "nav": [
+        {
+          "href": "https://github.com/201flaviosilva-labs/jsdoc-templates-examples",
+          "name": "JSDoc Templates Examples"
+        }
+      ]
+    }
+  }
+}
