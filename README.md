@@ -11,7 +11,8 @@ Just testing some JSDoc templates, check here: https://201flaviosilva-labs.githu
 | Better Docs        | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/betterDocs/)       | [GitHub](https://github.com/SoftwareBrothers/better-docs)   | `npm run betterDocs`       |
 | Clean JSDoc Theme  | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/CleanJsdocTheme/)  | [GitHub](https://github.com/ankitskvmdam/clean-jsdoc-theme) | `npm run cleanJsdocTheme`  |
 | Docdash            | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/docdash/)          | [GitHub](https://github.com/clenemt/docdash)                | `npm run docdash`          |
-| Docstrap           | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/inkDocstrap/)      | [GitHub](https://github.com/docstrap/docstrap)              | `npm run inkDocstrap`      |
+| Foodoc             | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/foodoc/)           | [GitHub](https://github.com/steveush/foodoc)                | `npm run foodoc`           |
+| Ink Docstrap       | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/inkDocstrap/)      | [GitHub](https://github.com/docstrap/docstrap)              | `npm run inkDocstrap`      |
 | Jaguarjs JSDoc     | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/jaguarjsJSDoc/)    | [GitHub](https://github.com/pixijs/jaguarjs-jsdoc)          | `npm run jaguarjsJSDoc`    |
 | Minami             | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/minami/)           | [GitHub](https://github.com/Nijikokun/minami)               | `npm run minami`           |
 | Tui.jsdoc Template | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/TUIJSDocTemplate/) | [GitHub](https://github.com/nhn/tui.jsdoc-template)         | `npm run TUIJSDocTemplate` |
