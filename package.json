@@ -14,10 +14,11 @@
     "foodoc": "jsdoc -c ./JSDocConfigs/foodoc.conf.json -t ./node_modules/foodoc/template",
     "inkDocstrap": "jsdoc -c ./JSDocConfigs/inkDocstrap.conf.json",
     "jaguarjsJSDoc": "jsdoc -c ./JSDocConfigs/jaguarjsJSDoc.conf.json",
+    "jsdocBaseline": "jsdoc -c ./JSDocConfigs/jsdocBaseline.conf.json",
     "minami": "jsdoc -c ./JSDocConfigs/minami.conf.json",
     "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.conf.json",
     "--": "echo 'build'",
-    "doc-all": "npm run jsDoc && npm run betterDocs && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run minami && npm run TUIJSDocTemplate",
+    "doc-all": "npm run jsDoc && npm run betterDocs && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run minami && npm run TUIJSDocTemplate",
     "build": "npm run clear && npm run doc-all && cp index.html build/"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "ink-docstrap": "^1.3.2",
     "jaguarjs-jsdoc": "^1.1.0",
     "jsdoc": "^3.6.11",
+    "jsdoc-baseline": "^0.1.5",
     "minami": "^1.2.3",
     "tui-jsdoc-template": "^1.2.2"
   },
