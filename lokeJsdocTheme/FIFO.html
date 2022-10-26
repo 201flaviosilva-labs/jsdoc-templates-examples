@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FIFO - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a><ul class='methods'><li data-type='method'><a href="Maths.html#.factorial">factorial</a></li><li data-type='method'><a href="Maths.html#.isEven">isEven</a></li><li data-type='method'><a href="Maths.html#.isOdd">isOdd</a></li><li data-type='method'><a href="Maths.html#.sum">sum</a></li></ul></li><li><a href="Objects.html">Objects</a></li></ul><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a><ul class='methods'><li data-type='method'><a href="FIFO.html#add">add</a></li><li data-type='method'><a href="FIFO.html#remove">remove</a></li></ul></li><li><a href="LIFO.html">LIFO</a><ul class='methods'><li data-type='method'><a href="LIFO.html#add">add</a></li><li data-type='method'><a href="LIFO.html#remove">remove</a></li></ul></li><li><a href="Objects.Circle.html">Circle</a><ul class='methods'><li data-type='method'><a href="Objects.Circle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Circle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Circle.html#.getLeft">getLeft</a></li><li data-type='method'><a href="Objects.Circle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Circle.html#.getTop">getTop</a></li><li data-type='method'><a href="Objects.Circle.html#.setRadius">setRadius</a></li></ul></li><li><a href="Objects.ObjectBase.html">ObjectBase</a><ul class='methods'><li data-type='method'><a href="Objects.ObjectBase.html#.setAngle">setAngle</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setFillColor">setFillColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setName">setName</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setPosition">setPosition</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setRotation">setRotation</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScale">setScale</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleX">setScaleX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleY">setScaleY</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeColor">setStrokeColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeWidth">setStrokeWidth</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setVisible">setVisible</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setX">setX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setY">setY</a></li></ul></li><li><a href="Objects.Rectangle.html">Rectangle</a><ul class='methods'><li data-type='method'><a href="Objects.Rectangle.html#.getArea">getArea</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterX">getCenterX</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterY">getCenterY</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setHeight">setHeight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setSize">setSize</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setWidth">setWidth</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">FIFO</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+        FIFO
+        </h2>
+        
+            <div class="lead"><p>First in, first out</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#add">add</a></li>
+            
+            <li><a href="#remove">remove</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="FIFO.js.html">FIFO.js</a>:<a href="FIFO.js.html#line1">1</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="FIFO">
+      <a href="#params-FIFO"><span class="type-signature"></span>new FIFO</a><span class="signature">(initState)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const fifo = new FIFO([1,2,3]);
+console.log(fifo.add(4)); // [1,2,3,4]
+console.log(fifo.remove()); // 1
+console.log(fifo.state); // [2,3,4]</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-FIFO">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)">https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)</a></li>
+        </ul>
+    </dd>
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-FIFO" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>initState</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;any></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The initial state</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * @class FIFO\n * @classdesc First in, first out\n * @see <a href="https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)">https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)</a>\n * \n * @example\n * const fifo = new FIFO([1,2,3]);\n * console.log(fifo.add(4)); // [1,2,3,4]\n * console.log(fifo.remove()); // 1\n * console.log(fifo.state); // [2,3,4]\n * \n * @param {any[]} initState - The initial state\n * @constructor\n */","meta":{"filename":"FIFO.js","lineno":1,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src","code":{},"shortpath":"FIFO.js"},"kind":"class","name":"FIFO","classdesc":"<p>First in, first out</p>","see":["<a href="https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)">https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)</a>"],"examples":[{"caption":"","code":"const fifo = new FIFO([1,2,3]);\nconsole.log(fifo.add(4)); // [1,2,3,4]\nconsole.log(fifo.remove()); // 1\nconsole.log(fifo.state); // [2,3,4]"}],"params":[{"type":{"names":["Array.<any>"]},"description":"<p>The initial state</p>","name":"initState"}],"longname":"FIFO","scope":"global","___id":"T000003R000002","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"FIFO","signature":"<span class=\"signature\">(initState)</span><span class=\"type-signature\"></span>","ancestors":[]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="FIFO.js.html">FIFO.js</a>:<a href="FIFO.js.html#line28">28</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="add">
+      <a href="#params-add"><span class="type-signature"></span>add</a><span class="signature">(value)</span><span class="type-signature"> &rarr; {Array.&lt;any>}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Adds a value to the current state</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>fifo.add(4);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-add">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-add" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the value to add</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;any></span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * Adds a value to the current state\n\t * \n\t * @example fifo.add(4);\n\t * \n\t * @param {any} value - the value to add\n\t * @returns {any[]}\n\t */","meta":{"range":[613,675],"filename":"FIFO.js","lineno":28,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src","code":{"id":"astnode100000924","name":"FIFO#add","type":"MethodDefinition","paramnames":["value"]},"vars":{"":null},"shortpath":"FIFO.js"},"description":"<p>Adds a value to the current state</p>","examples":[{"caption":"","code":"fifo.add(4);"}],"params":[{"type":{"names":["any"]},"description":"<p>the value to add</p>","name":"value"}],"returns":[{"type":{"names":["Array.<any>"]}}],"name":"add","longname":"FIFO#add","kind":"function","memberof":"FIFO","scope":"instance","___id":"T000002R000116","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"add","signature":"<span class=\"signature\">(value)</span><span class=\"type-signature\"> &rarr; {Array.&lt;any>}</span>","ancestors":["<a href=\"FIFO.html\">FIFO</a>#"]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="FIFO.js.html">FIFO.js</a>:<a href="FIFO.js.html#line40">40</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id="remove">
+      <a href="#params-remove"><span class="type-signature"></span>remove</a><span class="signature">()</span><span class="type-signature"> &rarr; {any}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Removes the first value of the current state</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>fifo.remove(); // 4</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-remove">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">any</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * Removes the first value of the current state\n\t * \n\t * @example fifo.remove(); // 4\n\t * \n\t * @returns {any}\n\t */","meta":{"range":[799,838],"filename":"FIFO.js","lineno":40,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src","code":{"id":"astnode100000941","name":"FIFO#remove","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"FIFO.js"},"description":"<p>Removes the first value of the current state</p>","examples":[{"caption":"","code":"fifo.remove(); // 4"}],"returns":[{"type":{"names":["any"]}}],"name":"remove","longname":"FIFO#remove","kind":"function","memberof":"FIFO","scope":"instance","params":[],"___id":"T000002R000117","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"remove","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {any}</span>","ancestors":["<a href=\"FIFO.html\">FIFO</a>#"]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Oct 26 2022 13:43:24 GMT+0000 (Coordinated Universal Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2DObjects/Circle.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FIFO.html">FIFO</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FIFO.html#add">add</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FIFO.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="LIFO.html">LIFO</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="LIFO.html#add">add</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="LIFO.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Objects.Circle.html">Circle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Circle.html#.getBottom">getBottom</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Circle.html#.getBounds">getBounds</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Circle.html#.getLeft">getLeft</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Circle.html#.getRight">getRight</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Circle.html#.getTop">getTop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Circle.html#.setRadius">setRadius</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Objects.ObjectBase.html">ObjectBase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setAngle">setAngle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setFillColor">setFillColor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setName">setName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setPosition">setPosition</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setRotation">setRotation</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setScale">setScale</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setScaleX">setScaleX</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setScaleY">setScaleY</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setStrokeColor">setStrokeColor</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setStrokeWidth">setStrokeWidth</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setVisible">setVisible</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setX">setX</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.ObjectBase.html#.setY">setY</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Objects.Rectangle.html">Rectangle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getArea">getArea</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getBottom">getBottom</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getBounds">getBounds</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getCenterX">getCenterX</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getCenterY">getCenterY</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.getRight">getRight</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.setHeight">setHeight</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.setSize">setSize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Objects.Rectangle.html#.setWidth">setWidth</a></span></li><li class="nav-heading">Namespaces</li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="Maths.html">Maths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Maths.html#.factorial">factorial</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Maths.html#.isEven">isEven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Maths.html#.isOdd">isOdd</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Maths.html#.sum">sum</a></span></li><li class="nav-heading"><span class="nav-item-type type-namespace">N</span><span class="nav-item-name"><a href="Objects.html">Objects</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#stringToCamelCase">stringToCamelCase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#stringToCapitalize">stringToCapitalize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#stringToKebabCase">stringToKebabCase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">2DObjects/Circle.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import ObjectBase from "./Object.js";
+
+/**
+ * @param {number} x - The horizontal position of this circle.
+ * @param {number} y - The vertical position of this circle.
+ * @param {number} [radius=10] - The radius of this circle.
+ * @param {number | string} [fillColor=0xffffff] - The color the circle will be filled with, i.e. 0xff0000 for red.
+ * @param {number | string} [strokeColor=0x000000] - The color of the border of the circle, i.e. 0x00ff00 for green.
+ * 
+ * @classdesc
+ * The Circle Shape is a 2D Object. 
+ * 
+ * @example
+ * const circ = new Circle(400, 300, 50, "#ff0000", 0x00ff00);
+ * 
+ * @class Circle
+ * @extends Objects.ObjectBase
+ * @constructors
+ * @memberof Objects
+ */
+export default class Circle extends ObjectBase {
+	constructor(x, y, radius = 10, fillColor = "#ffffff", strokeColor = "#000000") {
+		super(x, y, fillColor, strokeColor);
+		this.radius = radius;
+	}
+
+	/**
+	 * @description
+	 * Sets the X position of the Circle.
+	 * 
+	 * @example
+	 * circ.x = 100;
+	 * 
+	 * @param {number} x - The horizontal position of this Circle in the world.
+	 * @memberof Objects.Circle
+	 */
+	set x(x) { this.setX(x); }
+
+	/**
+	 * @description
+	 * Sets the Y position of the Circle.
+	 * 
+	 * @example
+	 * circ.y = 100;
+	 * 
+	 * @param {number} y - The vertical position of this Circle in the world.
+	 * @memberof Objects.Circle
+	 */
+	set y(y) { this.setY(y); }
+
+	/**
+	 * @returns {number} The horizontal position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	get x() { return this._x - this.radius * this.origin.x * this.scale.x; }
+
+	/**
+	 * @returns {number} The vertical position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	get y() { return this._y - this.radius * this.origin.y * this.scale.y; }
+
+	/**
+	 * @description
+	 * Sets the radius of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).setRadius(100); // 100
+	 * 
+	 * @param {number} radius - The radius of this Circle.
+	 * @returns {Circle} This Circle.
+	 * @memberof Objects.Circle
+	 */
+	setRadius(radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Returns the top side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getTop(); // 275
+	 * 
+	 * @returns {number} The vertical position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getTop() { return this.y - this.radius; }
+
+	/**
+	 * @description
+	 * Returns the bottom side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getBottom(); // 325
+	 * 
+	 * @returns {number} The vertical position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getBottom() { return this.y + this.radius; }
+
+	/**
+	 * @description
+	 * Returns the left side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getLeft(); // 375
+	 * 
+	 * @returns {number} The horizontal position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getLeft() { return this.x - this.radius; }
+
+	/**
+	 * @description
+	 * Returns the right side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getRight(); // 425
+	 * 
+	 * @returns {number} The horizontal position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getRight() { return this.x + this.radius; }
+
+	/**
+	 * @description
+	 * Returns a box that encloses the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getBounds(); // { x: 375, y: 275, width: 150, height: 150 }
+	 * 
+	 * @returns {Object} A box that encloses the Circle.
+	 * @memberof Objects.Circle
+	 */
+	getBounds() { return { x: this.getLeft(), y: this.getTop(), width: this.radius * 2, height: this.radius * 2 }; }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Oct 26 2022 13:43:25 GMT+0000 (Coordinated Universal Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

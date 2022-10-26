@@ -1,0 +1,622 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="generator" content="JSDoc 3.6.11">
+  <meta charset="utf-8">
+  <title>Class: Rectangle</title>
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Karla:400,400i,700,700i" type="text/css">
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Noto+Serif:400,400i,700,700i" type="text/css">
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Inconsolata:500" type="text/css">
+  <link href="css/baseline.css" rel="stylesheet">
+</head>
+
+<body onload="prettyPrint()">
+  <nav id="jsdoc-navbar" role="navigation" class="jsdoc-navbar">
+    <div id="jsdoc-navbar-container">
+      <div id="jsdoc-navbar-content">
+        <a href="index.html" class="jsdoc-navbar-package-name">Home</a>
+      </div>
+    </div>
+  </nav>
+  <div id="jsdoc-body-container">
+    <div id="jsdoc-content">
+      <div id="jsdoc-content-container">
+        <div id="jsdoc-main" role="main">
+          <header class="page-header">
+            <div class="symbol-detail-labels"><span class="label label-kind">class</span>&nbsp;<span class="label label-static">static</span></div>
+            <h1><small><a href="Objects.html">Objects</a>.<wbr></small><span class="symbol-name">Rectangle</span></h1>
+            <p class="source-link">Source: <a href="2DObjects_Rectangle.js.html#source-line-3">2DObjects/<wbr>Rectangle.<wbr>js:3</a></p>
+            <div class="symbol-classdesc">
+              <p>The Rectangle Shape is a 2D Object.
+                Its possible to set a rounder corner radius.</p>
+            </div>
+            <dl class="dl-compact">
+            </dl>
+          </header>
+          <section id="summary">
+            <div class="summary-callout">
+              <h2 class="summary-callout-heading">Properties</h2>
+              <div class="summary-content">
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Objects.Rectangle.html#.x">x</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.x">x</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Objects.Rectangle.html#.y">y</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.y">y</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="summary-column">
+                </div>
+              </div>
+            </div>
+            <div class="summary-callout">
+              <h2 class="summary-callout-heading">Methods</h2>
+              <div class="summary-content">
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Objects.Rectangle.html#.getArea">getArea()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.getBottom">getBottom()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.getBounds">getBounds()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.getCenterX">getCenterX()</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Objects.Rectangle.html#.getCenterY">getCenterY()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.getRight">getRight()</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.setHeight">setHeight(height)</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="Objects.Rectangle.html#.setSize">setSize(width, height)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="Objects.Rectangle.html#.setWidth">setWidth(width)</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2 id="Rectangle">new&nbsp;<span class="symbol-name">Rectangle</span><span class="signature"><span class="signature-params">(x, y[, width][, height][, fillColor][, strokeColor])</span></span></h2>
+            <section>
+              <h3>
+                Example
+              </h3>
+              <div>
+                <pre class="prettyprint"><code>const rect &#x3D; new Rectangle(400, 300, 75, 50, &quot;#ff0000&quot;, 0x00ff00);</code></pre>
+              </div>
+            </section>
+            <section>
+              <h3>Parameters</h3>
+              <table class="jsdoc-details-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Optional</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>x</p>
+                    </td>
+                    <td>
+                      <p>number</p>
+                    </td>
+                    <td>
+                      <p>&nbsp;</p>
+                    </td>
+                    <td>
+                      <p>The horizontal position of this rectangle</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>y</p>
+                    </td>
+                    <td>
+                      <p>number</p>
+                    </td>
+                    <td>
+                      <p>&nbsp;</p>
+                    </td>
+                    <td>
+                      <p>The vertical position of this rectangle</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>width</p>
+                    </td>
+                    <td>
+                      <p>number</p>
+                    </td>
+                    <td>
+                      <p>Yes</p>
+                    </td>
+                    <td>
+                      <p>The width of the rectangle.</p>
+                      <p>Defaults to <code>100</code>.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>height</p>
+                    </td>
+                    <td>
+                      <p>number</p>
+                    </td>
+                    <td>
+                      <p>Yes</p>
+                    </td>
+                    <td>
+                      <p>The height of the rectangle.</p>
+                      <p>Defaults to <code>100</code>.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>fillColor</p>
+                    </td>
+                    <td>
+                      <p>(number or string)</p>
+                    </td>
+                    <td>
+                      <p>Yes</p>
+                    </td>
+                    <td>
+                      <p>The color the rectangle will be filled with, i.e. 0xff0000 for red.</p>
+                      <p>Defaults to <code>0xffffff</code>.</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>strokeColor</p>
+                    </td>
+                    <td>
+                      <p>(number or string)</p>
+                    </td>
+                    <td>
+                      <p>Yes</p>
+                    </td>
+                    <td>
+                      <p>The color of the border of the rectangle, i.e. 0x00ff00 for green.</p>
+                      <p>Defaults to <code>0x000000</code>.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <dl class="dl-compact">
+              <dt>Extends</dt>
+              <dd><a href="Objects.ObjectBase.html">Objects.ObjectBase</a></dd>
+            </dl>
+          </section>
+          <section>
+            <h2>Properties</h2>
+            <section>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".x"><span class="symbol-name">x</span></h3>
+              <p>Sets the X position of the rectangle.</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>x</p>
+                      </td>
+                      <td>
+                        <p>number</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The horizontal position of this Rectangle in the world.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".x"><span class="symbol-name">x</span></h3>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The horizontal position of this Rectangle in the world relative to the origin.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".y"><span class="symbol-name">y</span></h3>
+              <p>Gets the Y position of the rectangle.</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>y</p>
+                      </td>
+                      <td>
+                        <p>number</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The vertical position of this Rectangle in the world.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".y"><span class="symbol-name">y</span></h3>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The vertical position of this Rectangle in the world relative to the origin.</p>
+                  </p>
+                </dd>
+              </dl>
+            </section>
+            <h2>Methods</h2>
+            <section>
+              <div class="symbol-detail-labels"><span class="label label-readonly">read-only</span>&nbsp;<span class="label label-static">static</span></div>
+              <h3 id=".getArea"><span class="symbol-name">getArea</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Gets the area of this Rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(0, 0, 100, 100).getArea(); // 10000</code></pre>
+                </div>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The area of this Rectangle.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".getBottom"><span class="symbol-name">getBottom</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Returns the bottom side position of the rectangle.</p>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The vertical position of this Rectangle in the world relative to the origin.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".getBounds"><span class="symbol-name">getBounds</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> Object</span></span></h3>
+              <p>Gets the bounding box of this Rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }</code></pre>
+                </div>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Object</code> 
+                  <p>The bounding box of this Rectangle.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".getCenterX"><span class="symbol-name">getCenterX</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Returns the center X position of the rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5</code></pre>
+                </div>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The horizontal position of this Rectangle in the world relative to the origin.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".getCenterY"><span class="symbol-name">getCenterY</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Returns the center Y position of the rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5</code></pre>
+                </div>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The vertical position of this Rectangle in the world relative to the origin.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-readonly">read-only</span>&nbsp;<span class="label label-static">static</span></div>
+              <h3 id=".getPerimeter"><span class="symbol-name">getPerimeter</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Gets the perimeter of this Rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(0, 0, 100, 100).getPerimeter(); // 200</code></pre>
+                </div>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The perimeter of this Rectangle.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".getRight"><span class="symbol-name">getRight</span><span class="signature"><span class="signature-params">()</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Returns the right side position of the rectangle.</p>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> 
+                  <p>The horizontal position of this Rectangle in the world relative to the origin.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".setHeight"><span class="symbol-name">setHeight</span><span class="signature"><span class="signature-params">(height)</span>&nbsp;&rarr; <span class="signature-returns"> Rectangle</span></span></h3>
+              <p>Sets the height of the rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setHeight(200);</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>height</p>
+                      </td>
+                      <td>
+                        <p>number</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The new height of this Rectangle.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Rectangle</code> 
+                  <p>This Rectangle.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".setSize"><span class="symbol-name">setSize</span><span class="signature"><span class="signature-params">(width, height)</span>&nbsp;&rarr; <span class="signature-returns"> Rectangle</span></span></h3>
+              <p>Sets the size of the rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setSize(50, 50);</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>width</p>
+                      </td>
+                      <td>
+                        <p>number</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The new width of this Rectangle.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>height</p>
+                      </td>
+                      <td>
+                        <p>number</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The new height of this Rectangle.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Rectangle</code> 
+                  <p>This Rectangle.</p>
+                  </p>
+                </dd>
+              </dl>
+              <div class="symbol-detail-labels"><span class="label label-static">static</span></div>
+              <h3 id=".setWidth"><span class="symbol-name">setWidth</span><span class="signature"><span class="signature-params">(width)</span>&nbsp;&rarr; <span class="signature-returns"> Rectangle</span></span></h3>
+              <p>Sets the width of the rectangle.</p>
+              <section>
+                <h4>
+                  Example
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setWidth(200);</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>width</p>
+                      </td>
+                      <td>
+                        <p>number</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>The new width of this Rectangle.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>Rectangle</code> 
+                  <p>This Rectangle.</p>
+                  </p>
+                </dd>
+              </dl>
+            </section>
+          </section>
+        </div>
+      </div>
+      <nav id="jsdoc-toc-nav" role="navigation"></nav>
+    </div>
+  </div>
+  <footer id="jsdoc-footer" class="jsdoc-footer">
+    <div id="jsdoc-footer-container">
+      <p>
+        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.11 on October 26, 2022.
+      </p>
+    </div>
+  </footer>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/tree.jquery.js"></script>
+  <script src="scripts/prettify.js"></script>
+  <script src="scripts/jsdoc-toc.js"></script>
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/scrollanchor.js"></script>
+</body>
+
+</html>

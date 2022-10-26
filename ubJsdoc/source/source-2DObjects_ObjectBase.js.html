@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../prism.css">
+    <!-- GitBook Markdown CSS -->
+    <link rel="stylesheet" href="../../gitbook-style.css">
+    <title>Doc</title>
+</head>
+<body>
+<div data-server-rendered="true" class="source"><pre data-line="0" id="code" class="prettyprint source lang-javascript">  <code>
+    /**
+ * @param {number} x - The horizontal position of this Object in the world.
+ * @param {number} y - The vertical position of this Object in the world.
+ * @param {number | string} [fillColor=0xffffff] - The color the Object will be filled with, i.e. 0xff0000 for red.
+ * @param {number | string} [strokeColor=0x000000] - The color of the border of the Object, i.e. 0x00ff00 for green.
+ * 
+ * @classdesc
+ * The base class for a 2D objects.
+ * Probably you don't need to use this class directly.
+ * Use this class to extend your own objects.
+ * 
+ * @example
+ * class MyObject extends ObjectBase {
+ * 	constructor(x, y, fillColor, strokeColor, ...args) {
+ * 		super(x, y, fillColor, strokeColor);
+ * 	}
+ * }
+ * 
+ * @class ObjectBase
+ * @constructors
+ * @memberof Objects
+ */
+export default class ObjectBase {
+	constructor(x, y, fillColor, strokeColor) {
+		this.id = Math.random();
+		this.name = `Obj - ${this.id}`;
+
+		// Render
+		this._x = x; // Get the real position X
+		this._y = y; // Get the real position Y
+		this.rotation = 0; // Rotation in radians
+		this.angle = 0; // Rotation in degrees
+		this.scale = { x: 1, y: 1 };
+
+		this.lastPosition = { x: this._x, y: this._y, z: this.z };
+		this.origin = { x: 0, y: 0 };
+		this.fillColor = fillColor;
+		this.strokeColor = strokeColor;
+		this.strokeWidth = 1;
+		this.visible = true;
+	}
+
+	/**
+	 * @description
+	 * Set the object's name.
+	 * 
+	 * @example
+	 * obj.setName(&quot;My Object&quot;);
+	 * 
+	 * @param {string} name - The name of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setName(name) {
+		this.name = name;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the horizontal position of the object in the world based on the origin.
+	 * 
+	 * @example
+	 * obj.setX(100);
+	 * 
+	 * @param {number} x - The horizontal position of the object in the world.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setX(x) {
+		this.setPosition(x + (this.width || this.radius) * this.origin.x, this._y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the vertical position of the object in the world based on the origin.
+	 * 
+	 * @example
+	 * obj.setY(100);
+	 * 
+	 * @param {number} y - The vertical position of the object in the world.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setY(y) {
+		this.setPosition(this._x, y + (this.height || this.radius) * this.origin.y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the position of the object in the world.
+	 * 
+	 * @example
+	 * obj.setPosition(100, 100, 100);
+	 * 
+	 * @param {number} x - The horizontal position of the object in the world.
+	 * @param {number} y - The vertical position of the object in the world.
+	 * @param {number} z - The Z position of the object in the world.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setPosition(x, y) {
+		this.lastPosition = { x: this.x, y: this.y };
+
+		this._x = x;
+		this._y = y;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the rotation of the object in the world based in radians.
+	 * 
+	 * @example
+	 * obj.setRotation(1.5);
+	 * 
+	 * @param {number} rotation - The rotation of the object in the world in radians.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setRotation(rotation) {
+		this.rotation = rotation;
+		this.angle = UtilsMathInstance.radiansToDegrees(rotation);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the angle of the object in the world based in degrees.
+	 * 
+	 * @example
+	 * obj.setAngle(90);
+	 * 
+	 * @param {number} angle - The angle of the object in the world in degrees.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setAngle(angle) {
+		this.angle = angle;
+		this.rotation = UtilsMathInstance.degreesToRadians(angle);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the horizontal scale of the object.
+	 * 
+	 * @example
+	 * obj.setScaleX(2);
+	 * 
+	 * @param {number} scaleX - The horizontal scale of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setScaleX(x) {
+		this.setScale(x, this.scale.y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the vertical scale of the object.
+	 * 
+	 * @example
+	 * obj.setScaleY(2);
+	 * 
+	 * @param {number} scaleY - The vertical scale of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setScaleY(y) {
+		this.setScale(this.scale.x, y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the horizontal and vertical scale of the object.
+	 * 
+	 * @example
+	 * obj.setScale(2);
+	 * 
+	 * @param {number} scale - The scale of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setScale(x = 0, y = x) {
+		this.scale = { x, y };
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the fill color of the object.
+	 * 
+	 * @example
+	 * obj.setFillColor(&quot;#FF0000&quot;);
+	 * 
+	 * @param {string} color - The fill color of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setFillColor(fillColor) {
+		this.fillColor = fillColor;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the stroke/border color of the object.
+	 * 
+	 * @example
+	 * obj.setStrokeColor(&quot;#FF0000&quot;);
+	 * 
+	 * @param {string} color - The stroke color of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setStrokeColor(strokeColor) {
+		this.strokeColor = strokeColor;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the stroke/border width of the object.
+	 * 
+	 * @example
+	 * obj.setStrokeWidth(2);
+	 * 
+	 * @param {number} width - The stroke width of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setStrokeWidth(strokeWidth) {
+		this.strokeWidth = strokeWidth;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the visibility of the object.
+	 * 
+	 * @example
+	 * obj.setVisible(false);
+	 * 
+	 * @param {boolean} visible - The visibility of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setVisible(isVisible) {
+		this.visible = isVisible;
+		return this;
+	}
+}
+
+  </code>
+</pre></div>
+<!-- Optional JavaScript -->
+<script>
+  //fix intend for code tag
+  document.querySelectorAll('pre').forEach(node => {
+    if (node.childNodes[0].nodeName === '#text')
+      node.childNodes[0].parentNode.removeChild(node.childNodes[0])
+  })
+  document.querySelectorAll('code').forEach(node => node.textContent = node.textContent.trim())
+</script>
+
+<script src="../../prism.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

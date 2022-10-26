@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Maths - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a><ul class='methods'><li data-type='method'><a href="Maths.html#.factorial">factorial</a></li><li data-type='method'><a href="Maths.html#.isEven">isEven</a></li><li data-type='method'><a href="Maths.html#.isOdd">isOdd</a></li><li data-type='method'><a href="Maths.html#.sum">sum</a></li></ul></li><li><a href="Objects.html">Objects</a></li></ul><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a><ul class='methods'><li data-type='method'><a href="FIFO.html#add">add</a></li><li data-type='method'><a href="FIFO.html#remove">remove</a></li></ul></li><li><a href="LIFO.html">LIFO</a><ul class='methods'><li data-type='method'><a href="LIFO.html#add">add</a></li><li data-type='method'><a href="LIFO.html#remove">remove</a></li></ul></li><li><a href="Objects.Circle.html">Circle</a><ul class='methods'><li data-type='method'><a href="Objects.Circle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Circle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Circle.html#.getLeft">getLeft</a></li><li data-type='method'><a href="Objects.Circle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Circle.html#.getTop">getTop</a></li><li data-type='method'><a href="Objects.Circle.html#.setRadius">setRadius</a></li></ul></li><li><a href="Objects.ObjectBase.html">ObjectBase</a><ul class='methods'><li data-type='method'><a href="Objects.ObjectBase.html#.setAngle">setAngle</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setFillColor">setFillColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setName">setName</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setPosition">setPosition</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setRotation">setRotation</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScale">setScale</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleX">setScaleX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleY">setScaleY</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeColor">setStrokeColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeWidth">setStrokeWidth</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setVisible">setVisible</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setX">setX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setY">setY</a></li></ul></li><li><a href="Objects.Rectangle.html">Rectangle</a><ul class='methods'><li data-type='method'><a href="Objects.Rectangle.html#.getArea">getArea</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterX">getCenterX</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterY">getCenterY</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setHeight">setHeight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setSize">setSize</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setWidth">setWidth</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Maths</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+        Maths
+        </h2>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#factorial">factorial</a></li>
+            
+            <li><a href="#isEven">isEven</a></li>
+            
+            <li><a href="#isOdd">isOdd</a></li>
+            
+            <li><a href="#sum">sum</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Just some math functions</p></div>
+        
+
+        <!-- details.tmpl -->
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Maths_index.js.html">index.js</a>:<a href="Maths_index.js.html#line5">5</a>
+  </code>
+</div>
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Maths_factorial.js.html">factorial.js</a>:<a href="Maths_factorial.js.html#line1">1</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".factorial">
+      <a href="#params-factorial"><span class="type-signature">(static) </span>factorial</a><span class="signature">(number)</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>The factorial of a non-negative​ number is computed as the product of all integers between 1 and the number itself</p>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>factorial(0); // 0</code></pre>
+
+    <pre class="prettyprint"><code>factorial(1); // 1</code></pre>
+
+    <pre class="prettyprint"><code>factorial(1.2); // 0.23999999999999994</code></pre>
+
+    <pre class="prettyprint"><code>factorial(4); // 24</code></pre>
+
+    <pre class="prettyprint"><code>factorial(6); // 720</code></pre>
+
+    <pre class="prettyprint"><code>factorial(10); // 3628800</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-factorial">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Factorial">https://en.wikipedia.org/wiki/Factorial</a></li>
+        </ul>
+    </dd>
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-factorial" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the number to factoring</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>the result</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * The factorial of a non-negative​ number is computed as the product of all integers between 1 and the number itself\n * \n * @see <a href="https://en.wikipedia.org/wiki/Factorial">https://en.wikipedia.org/wiki/Factorial</a>\n * \n * @example factorial(0); // 0\n * @example factorial(1); // 1\n * @example factorial(1.2); // 0.23999999999999994\n * @example factorial(4); // 24\n * @example factorial(6); // 720\n * @example factorial(10); // 3628800\n * \n * @param {number} number - the number to factoring\n * @returns {number} the result\n * \n * @function factorial\n * @memberof Maths\n */","meta":{"filename":"factorial.js","lineno":1,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/Maths","code":{},"shortpath":"Maths/factorial.js"},"description":"<p>The factorial of a non-negative​ number is computed as the product of all integers between 1 and the number itself</p>","see":["<a href="https://en.wikipedia.org/wiki/Factorial">https://en.wikipedia.org/wiki/Factorial</a>"],"examples":[{"caption":"","code":"factorial(0); // 0"},{"caption":"","code":"factorial(1); // 1"},{"caption":"","code":"factorial(1.2); // 0.23999999999999994"},{"caption":"","code":"factorial(4); // 24"},{"caption":"","code":"factorial(6); // 720"},{"caption":"","code":"factorial(10); // 3628800"}],"params":[{"type":{"names":["number"]},"description":"<p>the number to factoring</p>","name":"number"}],"returns":[{"type":{"names":["number"]},"description":"<p>the result</p>"}],"kind":"function","name":"factorial","memberof":"Maths","scope":"static","longname":"Maths.factorial","___id":"T000002R000125","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".factorial","signature":"<span class=\"signature\">(number)</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Maths.html\">Maths</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Maths_isEvenOdd.js.html">isEvenOdd.js</a>:<a href="Maths_isEvenOdd.js.html#line1">1</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".isEven">
+      <a href="#params-isEven"><span class="type-signature">(static) </span>isEven</a><span class="signature">(number)</span><span class="type-signature"> &rarr; {boolean}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Check is the given number is a EVEN number</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>isEven(1); // false
+isEven(2); // true</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-isEven">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-isEven" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The number to check</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Check is the given number is a EVEN number\n * \n * @example\n * isEven(1); // false\n * isEven(2); // true\n * \n * @param {number} number - The number to check\n * @returns {boolean}\n * \n * @function isEven\n * @memberof Maths\n */","meta":{"filename":"isEvenOdd.js","lineno":1,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/Maths","code":{},"shortpath":"Maths/isEvenOdd.js"},"description":"<p>Check is the given number is a EVEN number</p>","examples":[{"caption":"","code":"isEven(1); // false\nisEven(2); // true"}],"params":[{"type":{"names":["number"]},"description":"<p>The number to check</p>","name":"number"}],"returns":[{"type":{"names":["boolean"]}}],"kind":"function","name":"isEven","memberof":"Maths","scope":"static","longname":"Maths.isEven","___id":"T000002R000133","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".isEven","signature":"<span class=\"signature\">(number)</span><span class=\"type-signature\"> &rarr; {boolean}</span>","ancestors":["<a href=\"Maths.html\">Maths</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Maths_isEvenOdd.js.html">isEvenOdd.js</a>:<a href="Maths_isEvenOdd.js.html#line16">16</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".isOdd">
+      <a href="#params-isOdd"><span class="type-signature">(static) </span>isOdd</a><span class="signature">(number)</span><span class="type-signature"> &rarr; {boolean}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Check is the given number is a ODD number</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>isOdd(1); // true
+isOdd(2); // false</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-isOdd">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-isOdd" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The number to check</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Check is the given number is a ODD number\n * \n * @example\n * isOdd(1); // true\n * isOdd(2); // false\n * \n * @param {number} number - The number to check\n * @returns {boolean}\n * \n * @function isOdd\n * @memberof Maths\n */","meta":{"filename":"isEvenOdd.js","lineno":16,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/Maths","code":{},"shortpath":"Maths/isEvenOdd.js"},"description":"<p>Check is the given number is a ODD number</p>","examples":[{"caption":"","code":"isOdd(1); // true\nisOdd(2); // false"}],"params":[{"type":{"names":["number"]},"description":"<p>The number to check</p>","name":"number"}],"returns":[{"type":{"names":["boolean"]}}],"kind":"function","name":"isOdd","memberof":"Maths","scope":"static","longname":"Maths.isOdd","___id":"T000002R000136","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".isOdd","signature":"<span class=\"signature\">(number)</span><span class=\"type-signature\"> &rarr; {boolean}</span>","ancestors":["<a href=\"Maths.html\">Maths</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="Maths_sum.js.html">sum.js</a>:<a href="Maths_sum.js.html#line1">1</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".sum">
+      <a href="#params-sum"><span class="type-signature">(static) </span>sum</a><span class="signature">(&hellip;numbers)</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Calculates a sum of all givens numbers</p>
+</div>
+
+
+
+
+    <h5>Examples</h5>
+    
+    <pre class="prettyprint"><code>sum(1,1); // 2</code></pre>
+
+    <pre class="prettyprint"><code>sum(1,2,-5,2.4,-6.5); // -6.1</code></pre>
+
+    <pre class="prettyprint"><code>sum(1,2,3,4,5,6,7,8,9,0); // 45</code></pre>
+
+    <pre class="prettyprint"><code>sum(-1,2,3,4,5,6,7,8,-9); // 25</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-sum">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-sum" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the numbers to sum</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * Calculates a sum of all givens numbers\n * \n * @example sum(1,1); // 2\n * @example sum(1,2,-5,2.4,-6.5); // -6.1\n * @example sum(1,2,3,4,5,6,7,8,9,0); // 45\n * @example sum(-1,2,3,4,5,6,7,8,-9); // 25\n * \n * @param  {...number} numbers - the numbers to sum\n * @returns {number}\n * \n * @function sum\n * @memberof Maths\n */","meta":{"filename":"sum.js","lineno":1,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/Maths","code":{},"shortpath":"Maths/sum.js"},"description":"<p>Calculates a sum of all givens numbers</p>","examples":[{"caption":"","code":"sum(1,1); // 2"},{"caption":"","code":"sum(1,2,-5,2.4,-6.5); // -6.1"},{"caption":"","code":"sum(1,2,3,4,5,6,7,8,9,0); // 45"},{"caption":"","code":"sum(-1,2,3,4,5,6,7,8,-9); // 25"}],"params":[{"type":{"names":["number"]},"variable":true,"description":"<p>the numbers to sum</p>","name":"numbers"}],"returns":[{"type":{"names":["number"]}}],"kind":"function","name":"sum","memberof":"Maths","scope":"static","longname":"Maths.sum","___id":"T000002R000139","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".sum","signature":"<span class=\"signature\">(&hellip;numbers)</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Maths.html\">Maths</a>."]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Oct 26 2022 13:43:24 GMT+0000 (Coordinated Universal Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

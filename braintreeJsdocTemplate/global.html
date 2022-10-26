@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      Global - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      Braintree SDK Client Reference
+    </h3>
+
+    
+
+    <h3>Classes</h3><ul><li id="FIFO-nav"><a href="FIFO.html">FIFO</a><ul class='methods'><li data-type="method" id="FIFO-add-nav"><a href="FIFO.html#add">add</a></li><li data-type="method" id="FIFO-remove-nav"><a href="FIFO.html#remove">remove</a></li></ul></li><li id="LIFO-nav"><a href="LIFO.html">LIFO</a><ul class='methods'><li data-type="method" id="LIFO-add-nav"><a href="LIFO.html#add">add</a></li><li data-type="method" id="LIFO-remove-nav"><a href="LIFO.html#remove">remove</a></li></ul></li><li id="Circle-nav"><a href="Objects.Circle.html">Circle</a><ul class='methods'><li data-type="method" id="Circle-getBottom-nav"><a href="Objects.Circle.html#.getBottom">getBottom</a></li><li data-type="method" id="Circle-getBounds-nav"><a href="Objects.Circle.html#.getBounds">getBounds</a></li><li data-type="method" id="Circle-getLeft-nav"><a href="Objects.Circle.html#.getLeft">getLeft</a></li><li data-type="method" id="Circle-getRight-nav"><a href="Objects.Circle.html#.getRight">getRight</a></li><li data-type="method" id="Circle-getTop-nav"><a href="Objects.Circle.html#.getTop">getTop</a></li><li data-type="method" id="Circle-setRadius-nav"><a href="Objects.Circle.html#.setRadius">setRadius</a></li></ul></li><li id="ObjectBase-nav"><a href="Objects.ObjectBase.html">ObjectBase</a><ul class='methods'><li data-type="method" id="ObjectBase-setAngle-nav"><a href="Objects.ObjectBase.html#.setAngle">setAngle</a></li><li data-type="method" id="ObjectBase-setFillColor-nav"><a href="Objects.ObjectBase.html#.setFillColor">setFillColor</a></li><li data-type="method" id="ObjectBase-setName-nav"><a href="Objects.ObjectBase.html#.setName">setName</a></li><li data-type="method" id="ObjectBase-setPosition-nav"><a href="Objects.ObjectBase.html#.setPosition">setPosition</a></li><li data-type="method" id="ObjectBase-setRotation-nav"><a href="Objects.ObjectBase.html#.setRotation">setRotation</a></li><li data-type="method" id="ObjectBase-setScale-nav"><a href="Objects.ObjectBase.html#.setScale">setScale</a></li><li data-type="method" id="ObjectBase-setScaleX-nav"><a href="Objects.ObjectBase.html#.setScaleX">setScaleX</a></li><li data-type="method" id="ObjectBase-setScaleY-nav"><a href="Objects.ObjectBase.html#.setScaleY">setScaleY</a></li><li data-type="method" id="ObjectBase-setStrokeColor-nav"><a href="Objects.ObjectBase.html#.setStrokeColor">setStrokeColor</a></li><li data-type="method" id="ObjectBase-setStrokeWidth-nav"><a href="Objects.ObjectBase.html#.setStrokeWidth">setStrokeWidth</a></li><li data-type="method" id="ObjectBase-setVisible-nav"><a href="Objects.ObjectBase.html#.setVisible">setVisible</a></li><li data-type="method" id="ObjectBase-setX-nav"><a href="Objects.ObjectBase.html#.setX">setX</a></li><li data-type="method" id="ObjectBase-setY-nav"><a href="Objects.ObjectBase.html#.setY">setY</a></li></ul></li><li id="Rectangle-nav"><a href="Objects.Rectangle.html">Rectangle</a><ul class='methods'><li data-type="method" id="Rectangle-getArea-nav"><a href="Objects.Rectangle.html#.getArea">getArea</a></li><li data-type="method" id="Rectangle-getBottom-nav"><a href="Objects.Rectangle.html#.getBottom">getBottom</a></li><li data-type="method" id="Rectangle-getBounds-nav"><a href="Objects.Rectangle.html#.getBounds">getBounds</a></li><li data-type="method" id="Rectangle-getCenterX-nav"><a href="Objects.Rectangle.html#.getCenterX">getCenterX</a></li><li data-type="method" id="Rectangle-getCenterY-nav"><a href="Objects.Rectangle.html#.getCenterY">getCenterY</a></li><li data-type="method" id="Rectangle-getPerimeter-nav"><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter</a></li><li data-type="method" id="Rectangle-getRight-nav"><a href="Objects.Rectangle.html#.getRight">getRight</a></li><li data-type="method" id="Rectangle-setHeight-nav"><a href="Objects.Rectangle.html#.setHeight">setHeight</a></li><li data-type="method" id="Rectangle-setSize-nav"><a href="Objects.Rectangle.html#.setSize">setSize</a></li><li data-type="method" id="Rectangle-setWidth-nav"><a href="Objects.Rectangle.html#.setWidth">setWidth</a></li></ul></li></ul><h3 id="global-nav">Global</h3><ul><li><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></li><li><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li><li><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></li><li><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></li><li><a href="global.html#stringToCamelCase">stringToCamelCase</a></li><li><a href="global.html#stringToCapitalize">stringToCapitalize</a></li><li><a href="global.html#stringToKebabCase">stringToKebabCase</a></li><li><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></li><li><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        Global
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      <h2>
+        
+        
+        
+      </h2>
+
+      
+    
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+
+        
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#camelCaseToNormal">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="camelCaseToNormal">
+      <span class="type-signature"></span>camelCaseToNormal<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given camelCase text to a normal text</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="camelCase.js.html">camelCase.js</a>, <a href="camelCase.js.html#line17">line 17</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Camel_case">https://en.wikipedia.org/wiki/Camel_case</a>
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#camelCaseToNormal-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="camelCaseToNormal-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>camelCaseToNormal("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>camelCaseToNormal("Beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>camelCaseToNormal("beep boop"); // boop beep</code></pre>
+
+
+  <pre class="prettyprint"><code>camelCaseToNormal("Beep Boop"); // boop beep</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#capitalizeToNormal">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="capitalizeToNormal">
+      <span class="type-signature"></span>capitalizeToNormal<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given capitalized text to a normal text</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="capitalizeCase.js.html">capitalizeCase.js</a>, <a href="capitalizeCase.js.html#line17">line 17</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#capitalizeToNormal-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="capitalizeToNormal-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>capitalizeToNormal("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>capitalizeToNormal("Beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>capitalizeToNormal("beep boop"); // beep boop</code></pre>
+
+
+  <pre class="prettyprint"><code>capitalizeToNormal("beep Boop"); // beep Boop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#kebabCaseToNormal">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="kebabCaseToNormal">
+      <span class="type-signature"></span>kebabCaseToNormal<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given kebab-case text to a normal text</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="kebabCase.js.html">kebabCase.js</a>, <a href="kebabCase.js.html#line16">line 16</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#kebabCaseToNormal-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="kebabCaseToNormal-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>kebabCaseToNormal("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>kebabCaseToNormal("Beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>kebabCaseToNormal("beep-boop"); // beep boop</code></pre>
+
+
+  <pre class="prettyprint"><code>kebabCaseToNormal("Beep-Boop"); // Beep Boop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#screamingSnakeCaseToNormal">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="screamingSnakeCaseToNormal">
+      <span class="type-signature"></span>screamingSnakeCaseToNormal<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a SCREAMING_SNAKE_CASE base text</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="screamingSnakeCase.js.html">screamingSnakeCase.js</a>, <a href="screamingSnakeCase.js.html#line16">line 16</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#screamingSnakeCaseToNormal-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="screamingSnakeCaseToNormal-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>stringToScreamingSnakeCase("BEEP"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToScreamingSnakeCase("BEEP_BOOP"); // beep boop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#screamingSnakeCaseToNormalDeprecated">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="screamingSnakeCaseToNormalDeprecated">
+      <span class="type-signature"></span>screamingSnakeCaseToNormalDeprecated<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a SCREAMING_SNAKE_CASE base text.</p>
+<p>Use <a href="global.html#screamingSnakeCaseToNormal"><code>screamingSnakeCaseToNormal</code></a> function</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="important tag-deprecated">Deprecated:</dt>
+    
+        <dd class="yes-def tag-deprecated">
+          <ul class="dummy">
+            <li>Yes</li>
+          </ul>
+        </dd>
+      
+    <br>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="screamingSnakeCase.js.html">screamingSnakeCase.js</a>, <a href="screamingSnakeCase.js.html#line30">line 30</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            <a href="global.html#screamingSnakeCaseToNormal"><code>screamingSnakeCaseToNormal</code></a>
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#snakeCaseToNormal">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="snakeCaseToNormal">
+      <span class="type-signature"></span>snakeCaseToNormal<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given snake_case text to a normal text</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="snakeCase.js.html">snakeCase.js</a>, <a href="snakeCase.js.html#line17">line 17</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Snake_case">https://en.wikipedia.org/wiki/Snake_case</a>
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#snakeCaseToNormal-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="snakeCaseToNormal-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>snakeCaseToNormal("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>snakeCaseToNormal("Beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>snakeCaseToNormal("beep_boop"); // beep boop</code></pre>
+
+
+  <pre class="prettyprint"><code>snakeCaseToNormal("Beep_Boop"); // Beep Boop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#stringToCamelCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="stringToCamelCase">
+      <span class="type-signature"></span>stringToCamelCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a camelCase text based</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="camelCase.js.html">camelCase.js</a>, <a href="camelCase.js.html#line1">line 1</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Camel_case">https://en.wikipedia.org/wiki/Camel_case</a>
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#stringToCamelCase-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="stringToCamelCase-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>stringToCamelCase("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToCamelCase("Beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToCamelCase("beep boop"); // beepBoop</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToCamelCase("beep Boop"); // beepBoop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#stringToCapitalize">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="stringToCapitalize">
+      <span class="type-signature"></span>stringToCapitalize<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a Capitalize base text.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="capitalizeCase.js.html">capitalizeCase.js</a>, <a href="capitalizeCase.js.html#line1">line 1</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Capitalization">https://en.wikipedia.org/wiki/Capitalization</a>
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#stringToCapitalize-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="stringToCapitalize-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>stringToCapitalize("beep"); // Beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToCapitalize("Beep"); // Beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToCapitalize("beep boop"); // Beep boop</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToCapitalize("beep Boop"); // Beep Boop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#stringToKebabCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="stringToKebabCase">
+      <span class="type-signature"></span>stringToKebabCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a kebab-case base text.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="kebabCase.js.html">kebabCase.js</a>, <a href="kebabCase.js.html#line1">line 1</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#stringToKebabCase-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="stringToKebabCase-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>stringToSnakeCase("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToSnakeCase("Beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToSnakeCase("beep boop"); // beep-boop</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToSnakeCase("Beep Boop"); // Beep-Boop</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#stringToScreamingSnakeCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="stringToScreamingSnakeCase">
+      <span class="type-signature"></span>stringToScreamingSnakeCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a SCREAMING_SNAKE_CASE base text</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="screamingSnakeCase.js.html">screamingSnakeCase.js</a>, <a href="screamingSnakeCase.js.html#line1">line 1</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#stringToScreamingSnakeCase-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="stringToScreamingSnakeCase-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>stringToScreamingSnakeCase("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToScreamingSnakeCase("Beep"); // BEEP_BOOP</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToScreamingSnakeCase("beep_boop"); // BEEP_BOOP</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToScreamingSnakeCase("Beep_Boop"); // BEEP_BOOP</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#stringToSnakeCase">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="stringToSnakeCase">
+      <span class="type-signature"></span>stringToSnakeCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Change a given text to a snake_case base text.</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>str</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      string
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>the text to transform</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="snakeCase.js.html">snakeCase.js</a>, <a href="snakeCase.js.html#line1">line 1</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+      <ul>
+        
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Snake_case">https://en.wikipedia.org/wiki/Snake_case</a>
+          </li>
+        
+      </ul>
+    </dd>
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#stringToSnakeCase-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="stringToSnakeCase-examples">Examples</h5>
+    
+
+  <pre class="prettyprint"><code>stringToSnakeCase("beep"); // beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToSnakeCase("Beep"); // Beep</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToSnakeCase("beep boop"); // beep_boop</code></pre>
+
+
+  <pre class="prettyprint"><code>stringToSnakeCase("Beep Boop"); // Beep_Boop</code></pre>
+
+
+  </div>
+
+
+      
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

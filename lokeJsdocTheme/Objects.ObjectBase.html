@@ -1,0 +1,3202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>ObjectBase - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a><ul class='methods'><li data-type='method'><a href="Maths.html#.factorial">factorial</a></li><li data-type='method'><a href="Maths.html#.isEven">isEven</a></li><li data-type='method'><a href="Maths.html#.isOdd">isOdd</a></li><li data-type='method'><a href="Maths.html#.sum">sum</a></li></ul></li><li><a href="Objects.html">Objects</a></li></ul><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a><ul class='methods'><li data-type='method'><a href="FIFO.html#add">add</a></li><li data-type='method'><a href="FIFO.html#remove">remove</a></li></ul></li><li><a href="LIFO.html">LIFO</a><ul class='methods'><li data-type='method'><a href="LIFO.html#add">add</a></li><li data-type='method'><a href="LIFO.html#remove">remove</a></li></ul></li><li><a href="Objects.Circle.html">Circle</a><ul class='methods'><li data-type='method'><a href="Objects.Circle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Circle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Circle.html#.getLeft">getLeft</a></li><li data-type='method'><a href="Objects.Circle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Circle.html#.getTop">getTop</a></li><li data-type='method'><a href="Objects.Circle.html#.setRadius">setRadius</a></li></ul></li><li><a href="Objects.ObjectBase.html">ObjectBase</a><ul class='methods'><li data-type='method'><a href="Objects.ObjectBase.html#.setAngle">setAngle</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setFillColor">setFillColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setName">setName</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setPosition">setPosition</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setRotation">setRotation</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScale">setScale</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleX">setScaleX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleY">setScaleY</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeColor">setStrokeColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeWidth">setStrokeWidth</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setVisible">setVisible</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setX">setX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setY">setY</a></li></ul></li><li><a href="Objects.Rectangle.html">Rectangle</a><ul class='methods'><li data-type='method'><a href="Objects.Rectangle.html#.getArea">getArea</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterX">getCenterX</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterY">getCenterY</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setHeight">setHeight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setSize">setSize</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setWidth">setWidth</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">ObjectBase</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+            <span class="ancestors"><a href="Objects.html">Objects</a>.</span>
+        
+        ObjectBase
+        </h2>
+        
+            <div class="lead"><p>The base class for a 2D objects.
+Probably you don't need to use this class directly.
+Use this class to extend your own objects.</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Methods</dt><dd><ul>
+            <li><a href="#setAngle">setAngle</a></li>
+            
+            <li><a href="#setFillColor">setFillColor</a></li>
+            
+            <li><a href="#setName">setName</a></li>
+            
+            <li><a href="#setPosition">setPosition</a></li>
+            
+            <li><a href="#setRotation">setRotation</a></li>
+            
+            <li><a href="#setScale">setScale</a></li>
+            
+            <li><a href="#setScaleX">setScaleX</a></li>
+            
+            <li><a href="#setScaleY">setScaleY</a></li>
+            
+            <li><a href="#setStrokeColor">setStrokeColor</a></li>
+            
+            <li><a href="#setStrokeWidth">setStrokeWidth</a></li>
+            
+            <li><a href="#setVisible">setVisible</a></li>
+            
+            <li><a href="#setX">setX</a></li>
+            
+            <li><a href="#setY">setY</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line1">1</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="ObjectBase">
+      <a href="#params-ObjectBase"><span class="type-signature"></span>new ObjectBase</a><span class="signature">(x, y, fillColor<span class="signature-attributes">opt</span>, strokeColor<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>class MyObject extends ObjectBase {
+	constructor(x, y, fillColor, strokeColor, ...args) {
+		super(x, y, fillColor, strokeColor);
+	}
+}</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-ObjectBase">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-ObjectBase" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The horizontal position of this Object in the world.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The vertical position of this Object in the world.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fillColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0xffffff
+                
+                </td>
+            
+
+            <td class="description last"><p>The color the Object will be filled with, i.e. 0xff0000 for red.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strokeColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0x000000
+                
+                </td>
+            
+
+            <td class="description last"><p>The color of the border of the Object, i.e. 0x00ff00 for green.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * @param {number} x - The horizontal position of this Object in the world.\n * @param {number} y - The vertical position of this Object in the world.\n * @param {number | string} [fillColor=0xffffff] - The color the Object will be filled with, i.e. 0xff0000 for red.\n * @param {number | string} [strokeColor=0x000000] - The color of the border of the Object, i.e. 0x00ff00 for green.\n * \n * @classdesc\n * The base class for a 2D objects.\n * Probably you don't need to use this class directly.\n * Use this class to extend your own objects.\n * \n * @example\n * class MyObject extends ObjectBase {\n * \tconstructor(x, y, fillColor, strokeColor, ...args) {\n * \t\tsuper(x, y, fillColor, strokeColor);\n * \t}\n * }\n * \n * @class ObjectBase\n * @constructors\n * @memberof Objects\n */","meta":{"filename":"ObjectBase.js","lineno":1,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{},"shortpath":"2DObjects/ObjectBase.js"},"params":[{"type":{"names":["number"]},"description":"<p>The horizontal position of this Object in the world.</p>","name":"x"},{"type":{"names":["number"]},"description":"<p>The vertical position of this Object in the world.</p>","name":"y"},{"type":{"names":["number","string"]},"optional":true,"defaultvalue":"0xffffff","description":"<p>The color the Object will be filled with, i.e. 0xff0000 for red.</p>","name":"fillColor"},{"type":{"names":["number","string"]},"optional":true,"defaultvalue":"0x000000","description":"<p>The color of the border of the Object, i.e. 0x00ff00 for green.</p>","name":"strokeColor"}],"classdesc":"<p>The base class for a 2D objects.\nProbably you don't need to use this class directly.\nUse this class to extend your own objects.</p>","examples":[{"caption":"","code":"class MyObject extends ObjectBase {\n\tconstructor(x, y, fillColor, strokeColor, ...args) {\n\t\tsuper(x, y, fillColor, strokeColor);\n\t}\n}"}],"kind":"class","name":"ObjectBase","tags":[{"originalTitle":"constructors","title":"constructors","text":""}],"memberof":"Objects","scope":"static","longname":"Objects.ObjectBase","___id":"T000003R000005","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"ObjectBase","signature":"<span class=\"signature\">(x, y, fillColor<span class=\"signature-attributes\">opt</span>, strokeColor<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"Objects.html\">Objects</a>."]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line134">134</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setAngle">
+      <a href="#params-setAngle"><span class="type-signature">(static) </span>setAngle</a><span class="signature">(angle)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the angle of the object in the world based in degrees.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setAngle(90);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setAngle">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setAngle" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>angle</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The angle of the object in the world in degrees.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the angle of the object in the world based in degrees.\n\t * \n\t * @example\n\t * obj.setAngle(90);\n\t * \n\t * @param {number} angle - The angle of the object in the world in degrees.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[3579,3697],"filename":"ObjectBase.js","lineno":134,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000448","name":"setAngle","type":"MethodDefinition","paramnames":["angle"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the angle of the object in the world based in degrees.</p>","examples":[{"caption":"","code":"obj.setAngle(90);"}],"params":[{"type":{"names":["number"]},"description":"<p>The angle of the object in the world in degrees.</p>","name":"angle"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setAngle","longname":"Objects.ObjectBase.setAngle","kind":"function","scope":"static","___id":"T000002R000059","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setAngle","signature":"<span class=\"signature\">(angle)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line195">195</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setFillColor">
+      <a href="#params-setFillColor"><span class="type-signature">(static) </span>setFillColor</a><span class="signature">(color)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the fill color of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setFillColor("#FF0000");</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setFillColor">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setFillColor" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The fill color of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the fill color of the object.\n\t * \n\t * @example\n\t * obj.setFillColor(\"#FF0000\");\n\t * \n\t * @param {string} color - The fill color of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[4842,4915],"filename":"ObjectBase.js","lineno":195,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000529","name":"setFillColor","type":"MethodDefinition","paramnames":["fillColor"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the fill color of the object.</p>","examples":[{"caption":"","code":"obj.setFillColor(\"#FF0000\");"}],"params":[{"type":{"names":["string"]},"description":"<p>The fill color of the object.</p>","name":"color"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setFillColor","longname":"Objects.ObjectBase.setFillColor","kind":"function","scope":"static","___id":"T000002R000068","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setFillColor","signature":"<span class=\"signature\">(color)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line53">53</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setName">
+      <a href="#params-setName"><span class="type-signature">(static) </span>setName</a><span class="signature">(name)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the object's name.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setName("My Object");</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setName">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setName" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the object's name.\n\t * \n\t * @example\n\t * obj.setName(\"My Object\");\n\t * \n\t * @param {string} name - The name of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[1549,1602],"filename":"ObjectBase.js","lineno":53,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000318","name":"setName","type":"MethodDefinition","paramnames":["name"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the object's name.</p>","examples":[{"caption":"","code":"obj.setName(\"My Object\");"}],"params":[{"type":{"names":["string"]},"description":"<p>The name of the object.</p>","name":"name"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setName","longname":"Objects.ObjectBase.setName","kind":"function","scope":"static","___id":"T000002R000046","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setName","signature":"<span class=\"signature\">(name)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line100">100</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setPosition">
+      <a href="#params-setPosition"><span class="type-signature">(static) </span>setPosition</a><span class="signature">(x, y, z)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the position of the object in the world.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setPosition(100, 100, 100);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setPosition">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setPosition" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The horizontal position of the object in the world.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The vertical position of the object in the world.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>z</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The Z position of the object in the world.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the position of the object in the world.\n\t * \n\t * @example\n\t * obj.setPosition(100, 100, 100);\n\t * \n\t * @param {number} x - The horizontal position of the object in the world.\n\t * @param {number} y - The vertical position of the object in the world.\n\t * @param {number} z - The Z position of the object in the world.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[2782,2898],"filename":"ObjectBase.js","lineno":100,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000391","name":"setPosition","type":"MethodDefinition","paramnames":["x","y"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the position of the object in the world.</p>","examples":[{"caption":"","code":"obj.setPosition(100, 100, 100);"}],"params":[{"type":{"names":["number"]},"description":"<p>The horizontal position of the object in the world.</p>","name":"x"},{"type":{"names":["number"]},"description":"<p>The vertical position of the object in the world.</p>","name":"y"},{"type":{"names":["number"]},"description":"<p>The Z position of the object in the world.</p>","name":"z"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setPosition","longname":"Objects.ObjectBase.setPosition","kind":"function","scope":"static","___id":"T000002R000050","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setPosition","signature":"<span class=\"signature\">(x, y, z)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line118">118</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setRotation">
+      <a href="#params-setRotation"><span class="type-signature">(static) </span>setRotation</a><span class="signature">(rotation)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the rotation of the object in the world based in radians.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setRotation(1.5);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setRotation">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setRotation" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>rotation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The rotation of the object in the world in radians.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the rotation of the object in the world based in radians.\n\t * \n\t * @example\n\t * obj.setRotation(1.5);\n\t * \n\t * @param {number} rotation - The rotation of the object in the world in radians.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[3180,3310],"filename":"ObjectBase.js","lineno":118,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000425","name":"setRotation","type":"MethodDefinition","paramnames":["rotation"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the rotation of the object in the world based in radians.</p>","examples":[{"caption":"","code":"obj.setRotation(1.5);"}],"params":[{"type":{"names":["number"]},"description":"<p>The rotation of the object in the world in radians.</p>","name":"rotation"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setRotation","longname":"Objects.ObjectBase.setRotation","kind":"function","scope":"static","___id":"T000002R000056","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setRotation","signature":"<span class=\"signature\">(rotation)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line180">180</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setScale">
+      <a href="#params-setScale"><span class="type-signature">(static) </span>setScale</a><span class="signature">(scale)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the horizontal and vertical scale of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setScale(2);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setScale">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setScale" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>scale</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The scale of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the horizontal and vertical scale of the object.\n\t * \n\t * @example\n\t * obj.setScale(2);\n\t * \n\t * @param {number} scale - The scale of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[4539,4606],"filename":"ObjectBase.js","lineno":180,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000507","name":"setScale","type":"MethodDefinition","paramnames":["x","y"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the horizontal and vertical scale of the object.</p>","examples":[{"caption":"","code":"obj.setScale(2);"}],"params":[{"type":{"names":["number"]},"description":"<p>The scale of the object.</p>","name":"scale"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setScale","longname":"Objects.ObjectBase.setScale","kind":"function","scope":"static","___id":"T000002R000064","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setScale","signature":"<span class=\"signature\">(scale)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line150">150</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setScaleX">
+      <a href="#params-setScaleX"><span class="type-signature">(static) </span>setScaleX</a><span class="signature">(scaleX)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the horizontal scale of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setScaleX(2);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setScaleX">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setScaleX" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>scaleX</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The horizontal scale of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the horizontal scale of the object.\n\t * \n\t * @example\n\t * obj.setScaleX(2);\n\t * \n\t * @param {number} scaleX - The horizontal scale of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[3935,4001],"filename":"ObjectBase.js","lineno":150,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000471","name":"setScaleX","type":"MethodDefinition","paramnames":["x"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the horizontal scale of the object.</p>","examples":[{"caption":"","code":"obj.setScaleX(2);"}],"params":[{"type":{"names":["number"]},"description":"<p>The horizontal scale of the object.</p>","name":"scaleX"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setScaleX","longname":"Objects.ObjectBase.setScaleX","kind":"function","scope":"static","___id":"T000002R000062","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setScaleX","signature":"<span class=\"signature\">(scaleX)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line165">165</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setScaleY">
+      <a href="#params-setScaleY"><span class="type-signature">(static) </span>setScaleY</a><span class="signature">(scaleY)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the vertical scale of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setScaleY(2);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setScaleY">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setScaleY" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>scaleY</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The vertical scale of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the vertical scale of the object.\n\t * \n\t * @example\n\t * obj.setScaleY(2);\n\t * \n\t * @param {number} scaleY - The vertical scale of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[4235,4301],"filename":"ObjectBase.js","lineno":165,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000489","name":"setScaleY","type":"MethodDefinition","paramnames":["y"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the vertical scale of the object.</p>","examples":[{"caption":"","code":"obj.setScaleY(2);"}],"params":[{"type":{"names":["number"]},"description":"<p>The vertical scale of the object.</p>","name":"scaleY"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setScaleY","longname":"Objects.ObjectBase.setScaleY","kind":"function","scope":"static","___id":"T000002R000063","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setScaleY","signature":"<span class=\"signature\">(scaleY)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line210">210</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setStrokeColor">
+      <a href="#params-setStrokeColor"><span class="type-signature">(static) </span>setStrokeColor</a><span class="signature">(color)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the stroke/border color of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setStrokeColor("#FF0000");</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setStrokeColor">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setStrokeColor" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The stroke color of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the stroke/border color of the object.\n\t * \n\t * @example\n\t * obj.setStrokeColor(\"#FF0000\");\n\t * \n\t * @param {string} color - The stroke color of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[5164,5245],"filename":"ObjectBase.js","lineno":210,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000542","name":"setStrokeColor","type":"MethodDefinition","paramnames":["strokeColor"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the stroke/border color of the object.</p>","examples":[{"caption":"","code":"obj.setStrokeColor(\"#FF0000\");"}],"params":[{"type":{"names":["string"]},"description":"<p>The stroke color of the object.</p>","name":"color"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setStrokeColor","longname":"Objects.ObjectBase.setStrokeColor","kind":"function","scope":"static","___id":"T000002R000070","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setStrokeColor","signature":"<span class=\"signature\">(color)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line225">225</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setStrokeWidth">
+      <a href="#params-setStrokeWidth"><span class="type-signature">(static) </span>setStrokeWidth</a><span class="signature">(width)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the stroke/border width of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setStrokeWidth(2);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setStrokeWidth">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setStrokeWidth" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The stroke width of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the stroke/border width of the object.\n\t * \n\t * @example\n\t * obj.setStrokeWidth(2);\n\t * \n\t * @param {number} width - The stroke width of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[5486,5567],"filename":"ObjectBase.js","lineno":225,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000555","name":"setStrokeWidth","type":"MethodDefinition","paramnames":["strokeWidth"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the stroke/border width of the object.</p>","examples":[{"caption":"","code":"obj.setStrokeWidth(2);"}],"params":[{"type":{"names":["number"]},"description":"<p>The stroke width of the object.</p>","name":"width"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setStrokeWidth","longname":"Objects.ObjectBase.setStrokeWidth","kind":"function","scope":"static","___id":"T000002R000072","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setStrokeWidth","signature":"<span class=\"signature\">(width)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line240">240</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setVisible">
+      <a href="#params-setVisible"><span class="type-signature">(static) </span>setVisible</a><span class="signature">(visible)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the visibility of the object.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setVisible(false);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setVisible">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setVisible" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>visible</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">boolean</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The visibility of the object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the visibility of the object.\n\t * \n\t * @example\n\t * obj.setVisible(false);\n\t * \n\t * @param {boolean} visible - The visibility of the object.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[5800,5869],"filename":"ObjectBase.js","lineno":240,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000568","name":"setVisible","type":"MethodDefinition","paramnames":["isVisible"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the visibility of the object.</p>","examples":[{"caption":"","code":"obj.setVisible(false);"}],"params":[{"type":{"names":["boolean"]},"description":"<p>The visibility of the object.</p>","name":"visible"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setVisible","longname":"Objects.ObjectBase.setVisible","kind":"function","scope":"static","___id":"T000002R000074","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setVisible","signature":"<span class=\"signature\">(visible)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line68">68</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setX">
+      <a href="#params-setX"><span class="type-signature">(static) </span>setX</a><span class="signature">(x)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the horizontal position of the object in the world based on the origin.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setX(100);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setX">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setX" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The horizontal position of the object in the world.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the horizontal position of the object in the world based on the origin.\n\t * \n\t * @example\n\t * obj.setX(100);\n\t * \n\t * @param {number} x - The horizontal position of the object in the world.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[1884,1989],"filename":"ObjectBase.js","lineno":68,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000331","name":"setX","type":"MethodDefinition","paramnames":["x"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the horizontal position of the object in the world based on the origin.</p>","examples":[{"caption":"","code":"obj.setX(100);"}],"params":[{"type":{"names":["number"]},"description":"<p>The horizontal position of the object in the world.</p>","name":"x"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setX","longname":"Objects.ObjectBase.setX","kind":"function","scope":"static","___id":"T000002R000048","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setX","signature":"<span class=\"signature\">(x)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_ObjectBase.js.html">ObjectBase.js</a>:<a href="2DObjects_ObjectBase.js.html#line83">83</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setY">
+      <a href="#params-setY"><span class="type-signature">(static) </span>setY</a><span class="signature">(y)</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Set the vertical position of the object in the world based on the origin.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>obj.setY(100);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setY">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setY" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The vertical position of the object in the world.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Set the vertical position of the object in the world based on the origin.\n\t * \n\t * @example\n\t * obj.setY(100);\n\t * \n\t * @param {number} y - The vertical position of the object in the world.\n\t * @returns {Object}\n\t * @memberof Objects.ObjectBase\t */","meta":{"range":[2267,2373],"filename":"ObjectBase.js","lineno":83,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000361","name":"setY","type":"MethodDefinition","paramnames":["y"]},"vars":{"":null},"shortpath":"2DObjects/ObjectBase.js"},"description":"<p>Set the vertical position of the object in the world based on the origin.</p>","examples":[{"caption":"","code":"obj.setY(100);"}],"params":[{"type":{"names":["number"]},"description":"<p>The vertical position of the object in the world.</p>","name":"y"}],"returns":[{"type":{"names":["Object"]}}],"memberof":"Objects.ObjectBase","name":"setY","longname":"Objects.ObjectBase.setY","kind":"function","scope":"static","___id":"T000002R000049","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setY","signature":"<span class=\"signature\">(y)</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.ObjectBase.html\">.ObjectBase</a>."]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Oct 26 2022 13:43:24 GMT+0000 (Coordinated Universal Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

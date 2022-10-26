@@ -1,0 +1,328 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSDoc Templates Examples 2DObjects/Rectangle.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">JSDoc Templates Examples</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/201flaviosilva-labs/jsdoc-templates-examples"
+                        >
+                            Github
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a></li><li><a href="Objects.html">Objects</a></li></ul><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a></li><li><a href="LIFO.html">LIFO</a></li><li><a href="Objects.Circle.html">Circle</a></li><li><a href="Objects.ObjectBase.html">ObjectBase</a></li><li><a href="Objects.Rectangle.html">Rectangle</a></li></ul><h3>Global</h3><ul><li><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></li><li><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li><li><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></li><li><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></li><li><a href="global.html#stringToCamelCase">stringToCamelCase</a></li><li><a href="global.html#stringToCapitalize">stringToCapitalize</a></li><li><a href="global.html#stringToKebabCase">stringToKebabCase</a></li><li><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></li><li><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>2DObjects/Rectangle.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import ObjectBase from "./ObjectBase.js";
+
+/**
+ * @param {number} x - The horizontal position of this rectangle
+ * @param {number} y - The vertical position of this rectangle
+ * @param {number} [width=100] - The width of the rectangle.
+ * @param {number} [height=100] - The height of the rectangle.
+ * @param {number | string} [fillColor=0xffffff] - The color the rectangle will be filled with, i.e. 0xff0000 for red.
+ * @param {number | string} [strokeColor=0x000000] - The color of the border of the rectangle, i.e. 0x00ff00 for green.
+ * 
+ * @classdesc
+ * The Rectangle Shape is a 2D Object. 
+ * Its possible to set a rounder corner radius.
+ * 
+ * @example
+ * const rect = new Rectangle(400, 300, 75, 50, "#ff0000", 0x00ff00);
+ * 
+ * @class Rectangle
+ * @extends Objects.ObjectBase
+ * @constructors
+ * @memberof Objects
+ */
+export default class Rectangle extends ObjectBase {
+	constructor(x, y, width = 100, height = 100, fillColor = "#ffffff", strokeColor = "#000000") {
+		super(x, y, fillColor, strokeColor);
+
+		this.width = width;
+		this.height = height;
+	}
+
+	/**
+	 * @description
+	 * Sets the X position of the rectangle.
+	 * 
+	 * @param {number} x - The horizontal position of this Rectangle in the world.
+	 * @memberof Objects.Rectangle
+	 */
+	set x(x) { this.setX(x); }
+
+	/**
+	 * @description
+	 * Gets the Y position of the rectangle.
+	 * 
+	 * @param {number} y - The vertical position of this Rectangle in the world.
+	 * @memberof Objects.Rectangle
+	 */
+	set y(y) { this.setY(y); }
+
+	/**
+	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	get x() { return this._x - this.width * this.origin.x * this.scale.x; }
+
+	/**
+	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	get y() { return this._y - this.height * this.origin.y * this.scale.y; }
+
+
+	/**
+	 * @description
+	 * Returns the bottom side position of the rectangle.
+	 * 
+	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getBottom() { return this.y + this.height; }
+
+	/**
+	 * @description
+	 * Returns the right side position of the rectangle.
+	 * 
+	 * 
+	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getRight() { return this.x + this.width; }
+
+	/**
+	 * @description
+	 * Returns the center X position of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5
+	 * 
+	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getCenterX() { return this.x + this.width / 2; }
+
+	/**
+	 * @description
+	 * Returns the center Y position of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5
+	 * 
+	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getCenterY() { return this.y + this.height / 2; }
+
+	/**
+	 * @description
+	 * Sets the width of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setWidth(200);
+	 * 
+	 * @param {number} width - The new width of this Rectangle.
+	 * @returns {Rectangle} This Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	setWidth(width) {
+		this.setSize(width, this.height);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Sets the height of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setHeight(200);
+	 * 
+	 * @param {number} height - The new height of this Rectangle.
+	 * @returns {Rectangle} This Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	setHeight(height) {
+		this.setSize(this.width, height);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Sets the size of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setSize(50, 50);
+	 * 
+	 * @param {number} width - The new width of this Rectangle.
+	 * @param {number} height - The new height of this Rectangle.
+	 * @returns {Rectangle} This Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	setSize(width, height = width) {
+		this.width = width;
+		this.height = height;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Gets the bounding box of this Rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }
+	 * 
+	 * @returns {Object} The bounding box of this Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	getBounds() { return { x: this.x, y: this.y, width: this.width, height: this.height }; }
+
+	/**
+	 * @description
+	 * Gets the area of this Rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(0, 0, 100, 100).getArea(); // 10000
+	 * 
+	 * @returns {number} The area of this Rectangle.
+	 * @memberof Objects.Rectangle
+	 * @readonly
+	 */
+	getArea() { return this.width * this.height; }
+
+	/**
+	 * @description
+	 * Gets the perimeter of this Rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(0, 0, 100, 100).getPerimeter(); // 200
+	 * 
+	 * @returns {number} The perimeter of this Rectangle.
+	 * @memberof Objects.Rectangle
+	 * @readonly
+	 */
+	getPerimeter() { return 2 * (this.width + this.height); }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

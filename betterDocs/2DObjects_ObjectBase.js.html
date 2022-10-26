@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSDoc Templates Examples 2DObjects/ObjectBase.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+             
+                <a href="index.html">
+                    <h1 class="navbar-item">JSDoc Templates Examples</h1>
+                </a>
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                 
+                    
+                        <a
+                            class="link user-link "
+                            href="https://github.com/201flaviosilva-labs/jsdoc-templates-examples"
+                        >
+                            Github
+                        </a>
+                    
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+                <div class="search-wrapper">
+                    <input id="search" type="text" placeholder="Search docs..." class="input">
+                </div>
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a></li><li><a href="Objects.html">Objects</a></li></ul><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a></li><li><a href="LIFO.html">LIFO</a></li><li><a href="Objects.Circle.html">Circle</a></li><li><a href="Objects.ObjectBase.html">ObjectBase</a></li><li><a href="Objects.Rectangle.html">Rectangle</a></li></ul><h3>Global</h3><ul><li><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></li><li><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li><li><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></li><li><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></li><li><a href="global.html#stringToCamelCase">stringToCamelCase</a></li><li><a href="global.html#stringToCapitalize">stringToCapitalize</a></li><li><a href="global.html#stringToKebabCase">stringToKebabCase</a></li><li><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></li><li><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>2DObjects/ObjectBase.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @param {number} x - The horizontal position of this Object in the world.
+ * @param {number} y - The vertical position of this Object in the world.
+ * @param {number | string} [fillColor=0xffffff] - The color the Object will be filled with, i.e. 0xff0000 for red.
+ * @param {number | string} [strokeColor=0x000000] - The color of the border of the Object, i.e. 0x00ff00 for green.
+ * 
+ * @classdesc
+ * The base class for a 2D objects.
+ * Probably you don't need to use this class directly.
+ * Use this class to extend your own objects.
+ * 
+ * @example
+ * class MyObject extends ObjectBase {
+ * 	constructor(x, y, fillColor, strokeColor, ...args) {
+ * 		super(x, y, fillColor, strokeColor);
+ * 	}
+ * }
+ * 
+ * @class ObjectBase
+ * @constructors
+ * @memberof Objects
+ */
+export default class ObjectBase {
+	constructor(x, y, fillColor, strokeColor) {
+		this.id = Math.random();
+		this.name = `Obj - ${this.id}`;
+
+		// Render
+		this._x = x; // Get the real position X
+		this._y = y; // Get the real position Y
+		this.rotation = 0; // Rotation in radians
+		this.angle = 0; // Rotation in degrees
+		this.scale = { x: 1, y: 1 };
+
+		this.lastPosition = { x: this._x, y: this._y, z: this.z };
+		this.origin = { x: 0, y: 0 };
+		this.fillColor = fillColor;
+		this.strokeColor = strokeColor;
+		this.strokeWidth = 1;
+		this.visible = true;
+	}
+
+	/**
+	 * @description
+	 * Set the object's name.
+	 * 
+	 * @example
+	 * obj.setName("My Object");
+	 * 
+	 * @param {string} name - The name of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setName(name) {
+		this.name = name;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the horizontal position of the object in the world based on the origin.
+	 * 
+	 * @example
+	 * obj.setX(100);
+	 * 
+	 * @param {number} x - The horizontal position of the object in the world.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setX(x) {
+		this.setPosition(x + (this.width || this.radius) * this.origin.x, this._y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the vertical position of the object in the world based on the origin.
+	 * 
+	 * @example
+	 * obj.setY(100);
+	 * 
+	 * @param {number} y - The vertical position of the object in the world.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setY(y) {
+		this.setPosition(this._x, y + (this.height || this.radius) * this.origin.y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the position of the object in the world.
+	 * 
+	 * @example
+	 * obj.setPosition(100, 100, 100);
+	 * 
+	 * @param {number} x - The horizontal position of the object in the world.
+	 * @param {number} y - The vertical position of the object in the world.
+	 * @param {number} z - The Z position of the object in the world.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setPosition(x, y) {
+		this.lastPosition = { x: this.x, y: this.y };
+
+		this._x = x;
+		this._y = y;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the rotation of the object in the world based in radians.
+	 * 
+	 * @example
+	 * obj.setRotation(1.5);
+	 * 
+	 * @param {number} rotation - The rotation of the object in the world in radians.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setRotation(rotation) {
+		this.rotation = rotation;
+		this.angle = UtilsMathInstance.radiansToDegrees(rotation);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the angle of the object in the world based in degrees.
+	 * 
+	 * @example
+	 * obj.setAngle(90);
+	 * 
+	 * @param {number} angle - The angle of the object in the world in degrees.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setAngle(angle) {
+		this.angle = angle;
+		this.rotation = UtilsMathInstance.degreesToRadians(angle);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the horizontal scale of the object.
+	 * 
+	 * @example
+	 * obj.setScaleX(2);
+	 * 
+	 * @param {number} scaleX - The horizontal scale of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setScaleX(x) {
+		this.setScale(x, this.scale.y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the vertical scale of the object.
+	 * 
+	 * @example
+	 * obj.setScaleY(2);
+	 * 
+	 * @param {number} scaleY - The vertical scale of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setScaleY(y) {
+		this.setScale(this.scale.x, y);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the horizontal and vertical scale of the object.
+	 * 
+	 * @example
+	 * obj.setScale(2);
+	 * 
+	 * @param {number} scale - The scale of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setScale(x = 0, y = x) {
+		this.scale = { x, y };
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the fill color of the object.
+	 * 
+	 * @example
+	 * obj.setFillColor("#FF0000");
+	 * 
+	 * @param {string} color - The fill color of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setFillColor(fillColor) {
+		this.fillColor = fillColor;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the stroke/border color of the object.
+	 * 
+	 * @example
+	 * obj.setStrokeColor("#FF0000");
+	 * 
+	 * @param {string} color - The stroke color of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setStrokeColor(strokeColor) {
+		this.strokeColor = strokeColor;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the stroke/border width of the object.
+	 * 
+	 * @example
+	 * obj.setStrokeWidth(2);
+	 * 
+	 * @param {number} width - The stroke width of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setStrokeWidth(strokeWidth) {
+		this.strokeWidth = strokeWidth;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Set the visibility of the object.
+	 * 
+	 * @example
+	 * obj.setVisible(false);
+	 * 
+	 * @param {boolean} visible - The visibility of the object.
+	 * @returns {Object}
+	 * @memberof Objects.ObjectBase	 */
+	setVisible(isVisible) {
+		this.visible = isVisible;
+		return this;
+	}
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+<script src="scripts/search.js"> </script>
+
+
+</body>
+</html>

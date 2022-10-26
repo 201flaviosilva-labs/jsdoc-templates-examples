@@ -1,0 +1,690 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="generator" content="JSDoc 3.6.11">
+  <meta charset="utf-8">
+  <title>Globals</title>
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Karla:400,400i,700,700i" type="text/css">
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Noto+Serif:400,400i,700,700i" type="text/css">
+  <link rel="stylesheet" href="https://brick.a.ssl.fastly.net/Inconsolata:500" type="text/css">
+  <link href="css/baseline.css" rel="stylesheet">
+</head>
+
+<body onload="prettyPrint()">
+  <nav id="jsdoc-navbar" role="navigation" class="jsdoc-navbar">
+    <div id="jsdoc-navbar-container">
+      <div id="jsdoc-navbar-content">
+        <a href="index.html" class="jsdoc-navbar-package-name">Home</a>
+      </div>
+    </div>
+  </nav>
+  <div id="jsdoc-body-container">
+    <div id="jsdoc-content">
+      <div id="jsdoc-content-container">
+        <div id="jsdoc-main" role="main">
+          <h1>Globals</h1>
+          <section id="summary">
+            <div class="summary-callout">
+              <h2 class="summary-callout-heading">Methods</h2>
+              <div class="summary-content">
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="global.html#camelCaseToNormal">camelCaseToNormal(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#capitalizeToNormal">capitalizeToNormal(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#kebabCaseToNormal">kebabCaseToNormal(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal(str)</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#snakeCaseToNormal">snakeCaseToNormal(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#stringToCamelCase">stringToCamelCase(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#stringToCapitalize">stringToCapitalize(str)</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="summary-column">
+                  <dl class="dl-summary-callout">
+                    <dt><a href="global.html#stringToKebabCase">stringToKebabCase(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase(str)</a></dt>
+                    <dd>
+                    </dd>
+                    <dt><a href="global.html#stringToSnakeCase">stringToSnakeCase(str)</a></dt>
+                    <dd>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Methods</h2>
+            <section>
+              <h3 id="camelCaseToNormal"><span class="symbol-name">camelCaseToNormal</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given camelCase text to a normal text</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>camelCaseToNormal(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>camelCaseToNormal(&quot;Beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>camelCaseToNormal(&quot;beep boop&quot;); // boop beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>camelCaseToNormal(&quot;Beep Boop&quot;); // boop beep</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>See also</dt>
+                <dd><a href="https://en.wikipedia.org/wiki/Camel_case">https://en.wikipedia.org/wiki/Camel_case</a></dd>
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="capitalizeToNormal"><span class="symbol-name">capitalizeToNormal</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given capitalized text to a normal text</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>capitalizeToNormal(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>capitalizeToNormal(&quot;Beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>capitalizeToNormal(&quot;beep boop&quot;); // beep boop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>capitalizeToNormal(&quot;beep Boop&quot;); // beep Boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="kebabCaseToNormal"><span class="symbol-name">kebabCaseToNormal</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given kebab-case text to a normal text</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>kebabCaseToNormal(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>kebabCaseToNormal(&quot;Beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>kebabCaseToNormal(&quot;beep-boop&quot;); // beep boop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>kebabCaseToNormal(&quot;Beep-Boop&quot;); // Beep Boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="screamingSnakeCaseToNormal"><span class="symbol-name">screamingSnakeCaseToNormal</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a SCREAMING_SNAKE_CASE base text</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>stringToScreamingSnakeCase(&quot;BEEP&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToScreamingSnakeCase(&quot;BEEP_BOOP&quot;); // beep boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="screamingSnakeCaseToNormalDeprecated"><span class="symbol-name">screamingSnakeCaseToNormalDeprecated</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a SCREAMING_SNAKE_CASE base text.</p>
+              <p>Use <a href="global.html#screamingSnakeCaseToNormal"><code>screamingSnakeCaseToNormal</code></a> function</p>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Deprecated</dt>
+                <dd></dd>
+                <dt>See also</dt>
+                <dd><a href="global.html#screamingSnakeCaseToNormal"><code>screamingSnakeCaseToNormal</code></a></dd>
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="snakeCaseToNormal"><span class="symbol-name">snakeCaseToNormal</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given snake_case text to a normal text</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>snakeCaseToNormal(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>snakeCaseToNormal(&quot;Beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>snakeCaseToNormal(&quot;beep_boop&quot;); // beep boop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>snakeCaseToNormal(&quot;Beep_Boop&quot;); // Beep Boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>See also</dt>
+                <dd><a href="https://en.wikipedia.org/wiki/Snake_case">https://en.wikipedia.org/wiki/Snake_case</a></dd>
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="stringToCamelCase"><span class="symbol-name">stringToCamelCase</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a camelCase text based</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>stringToCamelCase(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToCamelCase(&quot;Beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToCamelCase(&quot;beep boop&quot;); // beepBoop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToCamelCase(&quot;beep Boop&quot;); // beepBoop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>See also</dt>
+                <dd><a href="https://en.wikipedia.org/wiki/Camel_case">https://en.wikipedia.org/wiki/Camel_case</a></dd>
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="stringToCapitalize"><span class="symbol-name">stringToCapitalize</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a Capitalize base text.</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>stringToCapitalize(&quot;beep&quot;); // Beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToCapitalize(&quot;Beep&quot;); // Beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToCapitalize(&quot;beep boop&quot;); // Beep boop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToCapitalize(&quot;beep Boop&quot;); // Beep Boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>See also</dt>
+                <dd><a href="https://en.wikipedia.org/wiki/Capitalization">https://en.wikipedia.org/wiki/Capitalization</a></dd>
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="stringToKebabCase"><span class="symbol-name">stringToKebabCase</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a kebab-case base text.</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;Beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;beep boop&quot;); // beep-boop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;Beep Boop&quot;); // Beep-Boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="stringToScreamingSnakeCase"><span class="symbol-name">stringToScreamingSnakeCase</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a SCREAMING_SNAKE_CASE base text</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>stringToScreamingSnakeCase(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToScreamingSnakeCase(&quot;Beep&quot;); // BEEP_BOOP</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToScreamingSnakeCase(&quot;beep_boop&quot;); // BEEP_BOOP</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToScreamingSnakeCase(&quot;Beep_Boop&quot;); // BEEP_BOOP</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="stringToSnakeCase"><span class="symbol-name">stringToSnakeCase</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
+              <p>Change a given text to a snake_case base text.</p>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;beep&quot;); // beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;Beep&quot;); // Beep</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;beep boop&quot;); // beep_boop</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>stringToSnakeCase(&quot;Beep Boop&quot;); // Beep_Boop</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameter</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>str</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the text to transform</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>See also</dt>
+                <dd><a href="https://en.wikipedia.org/wiki/Snake_case">https://en.wikipedia.org/wiki/Snake_case</a></dd>
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>string</code> </p>
+                </dd>
+              </dl>
+            </section>
+          </section>
+        </div>
+      </div>
+      <nav id="jsdoc-toc-nav" role="navigation"></nav>
+    </div>
+  </div>
+  <footer id="jsdoc-footer" class="jsdoc-footer">
+    <div id="jsdoc-footer-container">
+      <p>
+        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.11 on October 26, 2022.
+      </p>
+    </div>
+  </footer>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/tree.jquery.js"></script>
+  <script src="scripts/prettify.js"></script>
+  <script src="scripts/jsdoc-toc.js"></script>
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/scrollanchor.js"></script>
+</body>
+
+</html>

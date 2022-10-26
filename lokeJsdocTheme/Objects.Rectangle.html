@@ -1,0 +1,2638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Rectangle - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav class="nav">
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a><ul class='methods'><li data-type='method'><a href="Maths.html#.factorial">factorial</a></li><li data-type='method'><a href="Maths.html#.isEven">isEven</a></li><li data-type='method'><a href="Maths.html#.isOdd">isOdd</a></li><li data-type='method'><a href="Maths.html#.sum">sum</a></li></ul></li><li><a href="Objects.html">Objects</a></li></ul><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a><ul class='methods'><li data-type='method'><a href="FIFO.html#add">add</a></li><li data-type='method'><a href="FIFO.html#remove">remove</a></li></ul></li><li><a href="LIFO.html">LIFO</a><ul class='methods'><li data-type='method'><a href="LIFO.html#add">add</a></li><li data-type='method'><a href="LIFO.html#remove">remove</a></li></ul></li><li><a href="Objects.Circle.html">Circle</a><ul class='methods'><li data-type='method'><a href="Objects.Circle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Circle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Circle.html#.getLeft">getLeft</a></li><li data-type='method'><a href="Objects.Circle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Circle.html#.getTop">getTop</a></li><li data-type='method'><a href="Objects.Circle.html#.setRadius">setRadius</a></li></ul></li><li><a href="Objects.ObjectBase.html">ObjectBase</a><ul class='methods'><li data-type='method'><a href="Objects.ObjectBase.html#.setAngle">setAngle</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setFillColor">setFillColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setName">setName</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setPosition">setPosition</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setRotation">setRotation</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScale">setScale</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleX">setScaleX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleY">setScaleY</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeColor">setStrokeColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeWidth">setStrokeWidth</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setVisible">setVisible</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setX">setX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setY">setY</a></li></ul></li><li><a href="Objects.Rectangle.html">Rectangle</a><ul class='methods'><li data-type='method'><a href="Objects.Rectangle.html#.getArea">getArea</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBottom">getBottom</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBounds">getBounds</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterX">getCenterX</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterY">getCenterY</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getPerimeter">getPerimeter</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getRight">getRight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setHeight">setHeight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setSize">setSize</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setWidth">setWidth</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Rectangle</h1>
+    
+
+    <!--container.tmpl-->
+
+
+
+
+
+<section>
+
+
+
+<header data-tmpl="container.tmpl">
+    
+        <h2>
+            <span class="ancestors"><a href="Objects.html">Objects</a>.</span>
+        
+        Rectangle
+        </h2>
+        
+            <div class="lead"><p>The Rectangle Shape is a 2D Object.
+Its possible to set a rounder corner radius.</p></div>
+        
+    
+
+    
+      <div class="bs-callout bs-callout-default">
+        <h5>Members</h5>
+        <br />
+        <dl class="dl-horizontal methods-members">
+        <dt>Fields &amp; Properties</dt><dd><ul>
+            <li><a href="#x">x</a></li>
+            
+            <li><a href="#x">x</a></li>
+            
+            <li><a href="#y">y</a></li>
+            
+            <li><a href="#y">y</a></li>
+            </ul></dd><dt>Methods</dt><dd><ul>
+            <li><a href="#getArea">getArea</a></li>
+            
+            <li><a href="#getBottom">getBottom</a></li>
+            
+            <li><a href="#getBounds">getBounds</a></li>
+            
+            <li><a href="#getCenterX">getCenterX</a></li>
+            
+            <li><a href="#getCenterY">getCenterY</a></li>
+            
+            <li><a href="#getPerimeter">getPerimeter</a></li>
+            
+            <li><a href="#getRight">getRight</a></li>
+            
+            <li><a href="#setHeight">setHeight</a></li>
+            
+            <li><a href="#setSize">setSize</a></li>
+            
+            <li><a href="#setWidth">setWidth</a></li>
+            </ul></dd></dl></div>
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        <!--method.tmpl-->
+<div class="method-details">
+
+
+
+
+
+    
+    <h3 class="constructor">Constructor</h3>
+    
+
+    
+      <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line3">3</a>
+  </code>
+</div>
+
+    
+
+    <h4 class="name" id="Rectangle">
+      <a href="#params-Rectangle"><span class="type-signature"></span>new Rectangle</a><span class="signature">(x, y, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>, fillColor<span class="signature-attributes">opt</span>, strokeColor<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const rect = new Rectangle(400, 300, 75, 50, "#ff0000", 0x00ff00);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-Rectangle">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-Rectangle" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The horizontal position of this rectangle</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The vertical position of this rectangle</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    100
+                
+                </td>
+            
+
+            <td class="description last"><p>The width of the rectangle.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    100
+                
+                </td>
+            
+
+            <td class="description last"><p>The height of the rectangle.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fillColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0xffffff
+                
+                </td>
+            
+
+            <td class="description last"><p>The color the rectangle will be filled with, i.e. 0xff0000 for red.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strokeColor</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0x000000
+                
+                </td>
+            
+
+            <td class="description last"><p>The color of the border of the rectangle, i.e. 0x00ff00 for green.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n * @param {number} x - The horizontal position of this rectangle\n * @param {number} y - The vertical position of this rectangle\n * @param {number} [width=100] - The width of the rectangle.\n * @param {number} [height=100] - The height of the rectangle.\n * @param {number | string} [fillColor=0xffffff] - The color the rectangle will be filled with, i.e. 0xff0000 for red.\n * @param {number | string} [strokeColor=0x000000] - The color of the border of the rectangle, i.e. 0x00ff00 for green.\n * \n * @classdesc\n * The Rectangle Shape is a 2D Object. \n * Its possible to set a rounder corner radius.\n * \n * @example\n * const rect = new Rectangle(400, 300, 75, 50, \"#ff0000\", 0x00ff00);\n * \n * @class Rectangle\n * @extends Objects.ObjectBase\n * @constructors\n * @memberof Objects\n */","meta":{"filename":"Rectangle.js","lineno":3,"columnno":0,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{},"shortpath":"2DObjects/Rectangle.js"},"params":[{"type":{"names":["number"]},"description":"<p>The horizontal position of this rectangle</p>","name":"x"},{"type":{"names":["number"]},"description":"<p>The vertical position of this rectangle</p>","name":"y"},{"type":{"names":["number"]},"optional":true,"defaultvalue":100,"description":"<p>The width of the rectangle.</p>","name":"width"},{"type":{"names":["number"]},"optional":true,"defaultvalue":100,"description":"<p>The height of the rectangle.</p>","name":"height"},{"type":{"names":["number","string"]},"optional":true,"defaultvalue":"0xffffff","description":"<p>The color the rectangle will be filled with, i.e. 0xff0000 for red.</p>","name":"fillColor"},{"type":{"names":["number","string"]},"optional":true,"defaultvalue":"0x000000","description":"<p>The color of the border of the rectangle, i.e. 0x00ff00 for green.</p>","name":"strokeColor"}],"classdesc":"<p>The Rectangle Shape is a 2D Object.\nIts possible to set a rounder corner radius.</p>","examples":[{"caption":"","code":"const rect = new Rectangle(400, 300, 75, 50, \"#ff0000\", 0x00ff00);"}],"kind":"class","name":"Rectangle","augments":["Objects.ObjectBase"],"tags":[{"originalTitle":"constructors","title":"constructors","text":""}],"memberof":"Objects","scope":"static","longname":"Objects.Rectangle","___id":"T000003R000006","___s":true,"attribs":"<span class=\"type-signature\"></span>","id":"Rectangle","signature":"<span class=\"signature\">(x, y, width<span class=\"signature-attributes\">opt</span>, height<span class=\"signature-attributes\">opt</span>, fillColor<span class=\"signature-attributes\">opt</span>, strokeColor<span class=\"signature-attributes\">opt</span>)</span><span class=\"type-signature\"></span>","ancestors":["<a href=\"Objects.html\">Objects</a>."]}
+</pre>
+-->
+</div>
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Objects.ObjectBase.html">Objects.ObjectBase</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            <!--members.tmpl-->
+<div class="member-details">
+
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line38">38</a>
+  </code>
+</div>
+
+
+
+<h4 class="name" id=".x">
+  <span class="type-signature">(static) </span>x<span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Sets the X position of the rectangle.</p>
+</div>
+
+
+<div>
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+        
+            <!--members.tmpl-->
+<div class="member-details">
+
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line53">53</a>
+  </code>
+</div>
+
+
+
+<h4 class="name" id=".x">
+  <span class="type-signature">(static) </span>x<span class="type-signature"></span>
+</h4>
+
+
+
+
+
+<div>
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+        
+            <!--members.tmpl-->
+<div class="member-details">
+
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line47">47</a>
+  </code>
+</div>
+
+
+
+<h4 class="name" id=".y">
+  <span class="type-signature">(static) </span>y<span class="type-signature"></span>
+</h4>
+
+
+
+
+<div class="description">
+    <p>Gets the Y position of the rectangle.</p>
+</div>
+
+
+<div>
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+        
+            <!--members.tmpl-->
+<div class="member-details">
+
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line59">59</a>
+  </code>
+</div>
+
+
+
+<h4 class="name" id=".y">
+  <span class="type-signature">(static) </span>y<span class="type-signature"></span>
+</h4>
+
+
+
+
+
+<div>
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line178">178</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getArea">
+      <a href="#params-getArea"><span class="type-signature">(static) </span>getArea</a><span class="signature">()</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Gets the area of this Rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(0, 0, 100, 100).getArea(); // 10000</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getArea">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The area of this Rectangle.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Gets the area of this Rectangle.\n\t * \n\t * @example\n\t * new Rectangle(0, 0, 100, 100).getArea(); // 10000\n\t * \n\t * @returns {number} The area of this Rectangle.\n\t * @memberof Objects.Rectangle\n\t * @readonly\n\t */","meta":{"range":[4910,4956],"filename":"Rectangle.js","lineno":178,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000873","name":"getArea","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Gets the area of this Rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(0, 0, 100, 100).getArea(); // 10000"}],"returns":[{"type":{"names":["number"]},"description":"<p>The area of this Rectangle.</p>"}],"memberof":"Objects.Rectangle","readonly":true,"name":"getArea","longname":"Objects.Rectangle.getArea","kind":"function","scope":"static","params":[],"___id":"T000002R000109","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getArea","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line69">69</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getBottom">
+      <a href="#params-getBottom"><span class="type-signature">(static) </span>getBottom</a><span class="signature">()</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Returns the bottom side position of the rectangle.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getBottom">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The vertical position of this Rectangle in the world relative to the origin.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Returns the bottom side position of the rectangle.\n\t * \n\t * @returns {number} The vertical position of this Rectangle in the world relative to the origin.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[2146,2190],"filename":"Rectangle.js","lineno":69,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000745","name":"getBottom","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Returns the bottom side position of the rectangle.</p>","returns":[{"type":{"names":["number"]},"description":"<p>The vertical position of this Rectangle in the world relative to the origin.</p>"}],"memberof":"Objects.Rectangle","name":"getBottom","longname":"Objects.Rectangle.getBottom","kind":"function","scope":"static","params":[],"___id":"T000002R000095","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getBottom","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line165">165</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getBounds">
+      <a href="#params-getBounds"><span class="type-signature">(static) </span>getBounds</a><span class="signature">()</span><span class="type-signature"> &rarr; {Object}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Gets the bounding box of this Rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getBounds">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The bounding box of this Rectangle.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Gets the bounding box of this Rectangle.\n\t * \n\t * @example\n\t * new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }\n\t * \n\t * @returns {Object} The bounding box of this Rectangle.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[4582,4670],"filename":"Rectangle.js","lineno":165,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000851","name":"getBounds","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Gets the bounding box of this Rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }"}],"returns":[{"type":{"names":["Object"]},"description":"<p>The bounding box of this Rectangle.</p>"}],"memberof":"Objects.Rectangle","name":"getBounds","longname":"Objects.Rectangle.getBounds","kind":"function","scope":"static","params":[],"___id":"T000002R000104","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getBounds","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {Object}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line91">91</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getCenterX">
+      <a href="#params-getCenterX"><span class="type-signature">(static) </span>getCenterX</a><span class="signature">()</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Returns the center X position of the rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getCenterX">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The horizontal position of this Rectangle in the world relative to the origin.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Returns the center X position of the rectangle.\n\t * \n\t * @example\n\t * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5\n\t * \n\t * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[2770,2818],"filename":"Rectangle.js","lineno":91,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000769","name":"getCenterX","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Returns the center X position of the rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5"}],"returns":[{"type":{"names":["number"]},"description":"<p>The horizontal position of this Rectangle in the world relative to the origin.</p>"}],"memberof":"Objects.Rectangle","name":"getCenterX","longname":"Objects.Rectangle.getCenterX","kind":"function","scope":"static","params":[],"___id":"T000002R000097","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getCenterX","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line103">103</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getCenterY">
+      <a href="#params-getCenterY"><span class="type-signature">(static) </span>getCenterY</a><span class="signature">()</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Returns the center Y position of the rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getCenterY">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The vertical position of this Rectangle in the world relative to the origin.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Returns the center Y position of the rectangle.\n\t * \n\t * @example\n\t * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5\n\t * \n\t * @returns {number} The vertical position of this Rectangle in the world relative to the origin.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[3127,3176],"filename":"Rectangle.js","lineno":103,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000783","name":"getCenterY","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Returns the center Y position of the rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5"}],"returns":[{"type":{"names":["number"]},"description":"<p>The vertical position of this Rectangle in the world relative to the origin.</p>"}],"memberof":"Objects.Rectangle","name":"getCenterY","longname":"Objects.Rectangle.getCenterY","kind":"function","scope":"static","params":[],"___id":"T000002R000098","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getCenterY","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line191">191</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getPerimeter">
+      <a href="#params-getPerimeter"><span class="type-signature">(static) </span>getPerimeter</a><span class="signature">()</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Gets the perimeter of this Rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(0, 0, 100, 100).getPerimeter(); // 200</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getPerimeter">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The perimeter of this Rectangle.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Gets the perimeter of this Rectangle.\n\t * \n\t * @example\n\t * new Rectangle(0, 0, 100, 100).getPerimeter(); // 200\n\t * \n\t * @returns {number} The perimeter of this Rectangle.\n\t * @memberof Objects.Rectangle\n\t * @readonly\n\t */","meta":{"range":[5209,5266],"filename":"Rectangle.js","lineno":191,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000885","name":"getPerimeter","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Gets the perimeter of this Rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(0, 0, 100, 100).getPerimeter(); // 200"}],"returns":[{"type":{"names":["number"]},"description":"<p>The perimeter of this Rectangle.</p>"}],"memberof":"Objects.Rectangle","readonly":true,"name":"getPerimeter","longname":"Objects.Rectangle.getPerimeter","kind":"function","scope":"static","params":[],"___id":"T000002R000110","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getPerimeter","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line79">79</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".getRight">
+      <a href="#params-getRight"><span class="type-signature">(static) </span>getRight</a><span class="signature">()</span><span class="type-signature"> &rarr; {number}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Returns the right side position of the rectangle.</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-getRight">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>The horizontal position of this Rectangle in the world relative to the origin.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Returns the right side position of the rectangle.\n\t * \n\t * \n\t * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[2417,2459],"filename":"Rectangle.js","lineno":79,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000757","name":"getRight","type":"MethodDefinition","paramnames":[]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Returns the right side position of the rectangle.</p>","returns":[{"type":{"names":["number"]},"description":"<p>The horizontal position of this Rectangle in the world relative to the origin.</p>"}],"memberof":"Objects.Rectangle","name":"getRight","longname":"Objects.Rectangle.getRight","kind":"function","scope":"static","params":[],"___id":"T000002R000096","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".getRight","signature":"<span class=\"signature\">()</span><span class=\"type-signature\"> &rarr; {number}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line132">132</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setHeight">
+      <a href="#params-setHeight"><span class="type-signature">(static) </span>setHeight</a><span class="signature">(height)</span><span class="type-signature"> &rarr; {Rectangle}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Sets the height of the rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setHeight(200);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setHeight">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setHeight" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The new height of this Rectangle.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>This Rectangle.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Rectangle</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Sets the height of the rectangle.\n\t * \n\t * @example\n\t * new Rectangle(10, 10, 100, 100).setHeight(200);\n\t * \n\t * @param {number} height - The new height of this Rectangle.\n\t * @returns {Rectangle} This Rectangle.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[3801,3874],"filename":"Rectangle.js","lineno":132,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000813","name":"setHeight","type":"MethodDefinition","paramnames":["height"]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Sets the height of the rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(10, 10, 100, 100).setHeight(200);"}],"params":[{"type":{"names":["number"]},"description":"<p>The new height of this Rectangle.</p>","name":"height"}],"returns":[{"type":{"names":["Rectangle"]},"description":"<p>This Rectangle.</p>"}],"memberof":"Objects.Rectangle","name":"setHeight","longname":"Objects.Rectangle.setHeight","kind":"function","scope":"static","___id":"T000002R000100","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setHeight","signature":"<span class=\"signature\">(height)</span><span class=\"type-signature\"> &rarr; {Rectangle}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line149">149</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setSize">
+      <a href="#params-setSize"><span class="type-signature">(static) </span>setSize</a><span class="signature">(width, height)</span><span class="type-signature"> &rarr; {Rectangle}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Sets the size of the rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setSize(50, 50);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setSize">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setSize" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The new width of this Rectangle.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The new height of this Rectangle.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>This Rectangle.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Rectangle</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Sets the size of the rectangle.\n\t * \n\t * @example\n\t * new Rectangle(10, 10, 100, 100).setSize(50, 50);\n\t * \n\t * @param {number} width - The new width of this Rectangle.\n\t * @param {number} height - The new height of this Rectangle.\n\t * @returns {Rectangle} This Rectangle.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[4213,4309],"filename":"Rectangle.js","lineno":149,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000829","name":"setSize","type":"MethodDefinition","paramnames":["width","height"]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Sets the size of the rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(10, 10, 100, 100).setSize(50, 50);"}],"params":[{"type":{"names":["number"]},"description":"<p>The new width of this Rectangle.</p>","name":"width"},{"type":{"names":["number"]},"description":"<p>The new height of this Rectangle.</p>","name":"height"}],"returns":[{"type":{"names":["Rectangle"]},"description":"<p>This Rectangle.</p>"}],"memberof":"Objects.Rectangle","name":"setSize","longname":"Objects.Rectangle.setSize","kind":"function","scope":"static","___id":"T000002R000101","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setSize","signature":"<span class=\"signature\">(width, height)</span><span class=\"type-signature\"> &rarr; {Rectangle}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+            <!--method.tmpl-->
+<div class="method-details">
+
+
+
+  <!--source-link.tmpl-->
+
+
+<div class="pull-right source-link-container">
+  <code class="source-link" data-tmpl="method-tmpl(1)">
+    <i class="fa fa-file-o"></i>
+    <a href="2DObjects_Rectangle.js.html">Rectangle.js</a>:<a href="2DObjects_Rectangle.js.html#line116">116</a>
+  </code>
+</div>
+
+
+
+
+    
+
+    
+
+    <h4 class="name" id=".setWidth">
+      <a href="#params-setWidth"><span class="type-signature">(static) </span>setWidth</a><span class="signature">(width)</span><span class="type-signature"> &rarr; {Rectangle}</span>
+
+    </h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="description">
+    <p>Sets the width of the rectangle.</p>
+</div>
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>new Rectangle(10, 10, 100, 100).setWidth(200);</code></pre>
+
+
+
+
+
+
+<div class="collapse_" id="methodCollapse-setWidth">
+
+  
+
+  
+
+<!-- details.tmpl -->
+
+
+
+
+
+
+
+
+<dl class="dl-horizontal">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+  <div id="params-setWidth" class="bs-callout bs-callout-primary">
+    <h5>Parameters</h5>
+    <!--params.tmpl-->
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The new width of this Rectangle.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="bs-callout bs-callout-success">
+    <h5>Returns </h5>
+
+        
+<div class="param-desc">
+    <p>This Rectangle.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Rectangle</span>
+
+
+    </dd>
+</dl>
+
+    
+</div>
+  
+
+
+
+
+
+
+</div>
+
+<!--
+<pre>
+{"comment":"/**\n\t * @description\n\t * Sets the width of the rectangle.\n\t * \n\t * @example\n\t * new Rectangle(10, 10, 100, 100).setWidth(200);\n\t * \n\t * @param {number} width - The new width of this Rectangle.\n\t * @returns {Rectangle} This Rectangle.\n\t * @memberof Objects.Rectangle\n\t */","meta":{"range":[3451,3522],"filename":"Rectangle.js","lineno":116,"columnno":1,"path":"/home/runner/work/jsdoc-templates-examples/jsdoc-templates-examples/src/2DObjects","code":{"id":"astnode100000797","name":"setWidth","type":"MethodDefinition","paramnames":["width"]},"vars":{"":null},"shortpath":"2DObjects/Rectangle.js"},"description":"<p>Sets the width of the rectangle.</p>","examples":[{"caption":"","code":"new Rectangle(10, 10, 100, 100).setWidth(200);"}],"params":[{"type":{"names":["number"]},"description":"<p>The new width of this Rectangle.</p>","name":"width"}],"returns":[{"type":{"names":["Rectangle"]},"description":"<p>This Rectangle.</p>"}],"memberof":"Objects.Rectangle","name":"setWidth","longname":"Objects.Rectangle.setWidth","kind":"function","scope":"static","___id":"T000002R000099","___s":true,"attribs":"<span class=\"type-signature\">(static) </span>","id":".setWidth","signature":"<span class=\"signature\">(width)</span><span class=\"type-signature\"> &rarr; {Rectangle}</span>","ancestors":["<a href=\"Objects.html\">Objects</a>","<a href=\"Objects.Rectangle.html\">.Rectangle</a>."]}
+</pre>
+-->
+</div>
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Oct 26 2022 13:43:24 GMT+0000 (Coordinated Universal Time) using the LOKE theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

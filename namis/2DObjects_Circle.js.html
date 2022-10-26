@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>2DObjects/Circle.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav id="nav">
+    <h3 class="group-title"><a href="index.html">&#x3C; Home &#x3E;</a></h3><input class="search" placeholder="Search" type="text"><div class="list"><h3 class="group-title">Classes</h3><ul><li><a href="FIFO.html" class="className">FIFO</a><ul class='methods'><li data-type='method'><a href="FIFO.html#add" class="methodName">add</a></li><li data-type='method'><a href="FIFO.html#remove" class="methodName">remove</a></li></ul></li><li><a href="LIFO.html" class="className">LIFO</a><ul class='methods'><li data-type='method'><a href="LIFO.html#add" class="methodName">add</a></li><li data-type='method'><a href="LIFO.html#remove" class="methodName">remove</a></li></ul></li><li><a href="Objects.Circle.html" class="className">Circle</a><ul class='methods'><li data-type='method'><a href="Objects.Circle.html#.getBottom" class="methodName">getBottom</a></li><li data-type='method'><a href="Objects.Circle.html#.getBounds" class="methodName">getBounds</a></li><li data-type='method'><a href="Objects.Circle.html#.getLeft" class="methodName">getLeft</a></li><li data-type='method'><a href="Objects.Circle.html#.getRight" class="methodName">getRight</a></li><li data-type='method'><a href="Objects.Circle.html#.getTop" class="methodName">getTop</a></li><li data-type='method'><a href="Objects.Circle.html#.setRadius" class="methodName">setRadius</a></li></ul></li><li><a href="Objects.ObjectBase.html" class="className">ObjectBase</a><ul class='methods'><li data-type='method'><a href="Objects.ObjectBase.html#.setAngle" class="methodName">setAngle</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setFillColor" class="methodName">setFillColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setName" class="methodName">setName</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setPosition" class="methodName">setPosition</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setRotation" class="methodName">setRotation</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScale" class="methodName">setScale</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleX" class="methodName">setScaleX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleY" class="methodName">setScaleY</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeColor" class="methodName">setStrokeColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeWidth" class="methodName">setStrokeWidth</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setVisible" class="methodName">setVisible</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setX" class="methodName">setX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setY" class="methodName">setY</a></li></ul></li><li><a href="Objects.Rectangle.html" class="className">Rectangle</a><ul class='methods'><li data-type='method'><a href="Objects.Rectangle.html#.getArea" class="methodName">getArea</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBottom" class="methodName">getBottom</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBounds" class="methodName">getBounds</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterX" class="methodName">getCenterX</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterY" class="methodName">getCenterY</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getPerimeter" class="methodName">getPerimeter</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getRight" class="methodName">getRight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setHeight" class="methodName">setHeight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setSize" class="methodName">setSize</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setWidth" class="methodName">setWidth</a></li></ul></li></ul><h3 class="group-title">Namespaces</h3><ul><li><a href="Maths.html" class="className">Maths</a><ul class='methods'><li data-type='method'><a href="Maths.html#.factorial" class="methodName">factorial</a></li><li data-type='method'><a href="Maths.html#.isEven" class="methodName">isEven</a></li><li data-type='method'><a href="Maths.html#.isOdd" class="methodName">isOdd</a></li><li data-type='method'><a href="Maths.html#.sum" class="methodName">sum</a></li></ul></li><li><a href="Objects.html" class="className">Objects</a></li></ul><h3>Global</h3><ul><li><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></li><li><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li><li><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></li><li><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></li><li><a href="global.html#stringToCamelCase">stringToCamelCase</a></li><li><a href="global.html#stringToCapitalize">stringToCapitalize</a></li><li><a href="global.html#stringToKebabCase">stringToKebabCase</a></li><li><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></li><li><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></li></ul></div>
+</nav>
+
+<div id="main">
+    
+        <h1 class="page-title">2DObjects/Circle.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import ObjectBase from "./Object.js";
+
+/**
+ * @param {number} x - The horizontal position of this circle.
+ * @param {number} y - The vertical position of this circle.
+ * @param {number} [radius=10] - The radius of this circle.
+ * @param {number | string} [fillColor=0xffffff] - The color the circle will be filled with, i.e. 0xff0000 for red.
+ * @param {number | string} [strokeColor=0x000000] - The color of the border of the circle, i.e. 0x00ff00 for green.
+ * 
+ * @classdesc
+ * The Circle Shape is a 2D Object. 
+ * 
+ * @example
+ * const circ = new Circle(400, 300, 50, "#ff0000", 0x00ff00);
+ * 
+ * @class Circle
+ * @extends Objects.ObjectBase
+ * @constructors
+ * @memberof Objects
+ */
+export default class Circle extends ObjectBase {
+	constructor(x, y, radius = 10, fillColor = "#ffffff", strokeColor = "#000000") {
+		super(x, y, fillColor, strokeColor);
+		this.radius = radius;
+	}
+
+	/**
+	 * @description
+	 * Sets the X position of the Circle.
+	 * 
+	 * @example
+	 * circ.x = 100;
+	 * 
+	 * @param {number} x - The horizontal position of this Circle in the world.
+	 * @memberof Objects.Circle
+	 */
+	set x(x) { this.setX(x); }
+
+	/**
+	 * @description
+	 * Sets the Y position of the Circle.
+	 * 
+	 * @example
+	 * circ.y = 100;
+	 * 
+	 * @param {number} y - The vertical position of this Circle in the world.
+	 * @memberof Objects.Circle
+	 */
+	set y(y) { this.setY(y); }
+
+	/**
+	 * @returns {number} The horizontal position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	get x() { return this._x - this.radius * this.origin.x * this.scale.x; }
+
+	/**
+	 * @returns {number} The vertical position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	get y() { return this._y - this.radius * this.origin.y * this.scale.y; }
+
+	/**
+	 * @description
+	 * Sets the radius of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).setRadius(100); // 100
+	 * 
+	 * @param {number} radius - The radius of this Circle.
+	 * @returns {Circle} This Circle.
+	 * @memberof Objects.Circle
+	 */
+	setRadius(radius) {
+		this.radius = radius;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Returns the top side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getTop(); // 275
+	 * 
+	 * @returns {number} The vertical position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getTop() { return this.y - this.radius; }
+
+	/**
+	 * @description
+	 * Returns the bottom side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getBottom(); // 325
+	 * 
+	 * @returns {number} The vertical position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getBottom() { return this.y + this.radius; }
+
+	/**
+	 * @description
+	 * Returns the left side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getLeft(); // 375
+	 * 
+	 * @returns {number} The horizontal position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getLeft() { return this.x - this.radius; }
+
+	/**
+	 * @description
+	 * Returns the right side position of the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getRight(); // 425
+	 * 
+	 * @returns {number} The horizontal position of this Circle in the world relative to the origin.
+	 * @memberof Objects.Circle
+	 */
+	getRight() { return this.x + this.radius; }
+
+	/**
+	 * @description
+	 * Returns a box that encloses the Circle.
+	 * 
+	 * @example
+	 * new Circle(400, 300, 50).getBounds(); // { x: 375, y: 275, width: 150, height: 150 }
+	 * 
+	 * @returns {Object} A box that encloses the Circle.
+	 * @memberof Objects.Circle
+	 */
+	getBounds() { return { x: this.getLeft(), y: this.getTop(), width: this.radius * 2, height: this.radius * 2 }; }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed, 26 Oct 2022 13:43:26 GMT using
+    <a href="https://www.npmjs.com/package/namis">Namis</a> theme.
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+<script src="scripts/namis.search.jquery.js"></script>
+<script>prettyPrint();
+(function($){
+    $('nav').niceScroll({
+        cursorwidth: 7,
+        hwacceleration: true,
+        cursorcolor: "#036564",
+        cursorborder: "1px solid #036564"
+    });
+
+    $('html').niceScroll({
+        cursorwidth: 10,
+        hwacceleration: true,
+        smoothscroll: true,
+        cursorminheight: 32,
+        enablemousewheel: true, // nicescroll can manage mouse wheel events
+        enablekeyboard: true // nicescroll can manage keyboard events
+        ,cursorcolor: "#033649"
+    });
+
+    $('#nav').search(['className', 'methodName']);
+})(jQuery);
+</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

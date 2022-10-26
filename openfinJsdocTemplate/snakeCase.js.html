@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116096600-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116096600-2');
+    </script>
+
+    <meta charset="utf-8">
+    <title>JSDoc: Source: snakeCase.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="FIFO.html">FIFO</a></li><li><a href="LIFO.html">LIFO</a></li><li><a href="Objects.Circle.html">Circle</a></li><li><a href="Objects.ObjectBase.html">ObjectBase</a></li><li><a href="Objects.Rectangle.html">Rectangle</a></li></ul><h3>Namespaces</h3><ul><li><a href="Maths.html">Maths</a></li><li><a href="Objects.html">Objects</a></li></ul><h3>Global</h3><ul><li><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></li><li><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li><li><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></li><li><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></li><li><a href="global.html#stringToCamelCase">stringToCamelCase</a></li><li><a href="global.html#stringToCapitalize">stringToCapitalize</a></li><li><a href="global.html#stringToKebabCase">stringToKebabCase</a></li><li><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></li><li><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></li></ul>
+</nav>
+<div id="main">
+
+    <h1 class="page-title">Source: snakeCase.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Change a given text to a snake_case base text.
+ * @see {@link https://en.wikipedia.org/wiki/Snake_case}
+ * 
+ * @example stringToSnakeCase("beep"); // beep
+ * @example stringToSnakeCase("Beep"); // Beep
+ * @example stringToSnakeCase("beep boop"); // beep_boop
+ * @example stringToSnakeCase("Beep Boop"); // Beep_Boop
+ * 
+ * @param {string} str - the text to transform
+ * @returns {string}
+ * 
+ * @function stringToSnakeCase
+ */
+export function stringToSnakeCase(str) { return str.replace(/\s/g, "_").replace(/([A-Z])/g, ($1) => "_" + $1.toLowerCase()); }
+
+/**
+ * Change a given snake_case text to a normal text
+ * @see {@link https://en.wikipedia.org/wiki/Snake_case}
+ * 
+ * @example snakeCaseToNormal("beep"); // beep
+ * @example snakeCaseToNormal("Beep"); // beep
+ * @example snakeCaseToNormal("beep_boop"); // beep boop
+ * @example snakeCaseToNormal("Beep_Boop"); // Beep Boop
+ * 
+ * @param {string} str - the text to transform
+ * @returns {string}
+ * 
+ * @function snakeCaseToNormal
+ */
+export function snakeCaseToNormal(str) { return str.replace(/_/g, " ").replace(/([A-Z])/g, ($1) => " " + $1.toLowerCase()); }
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    © 2022 <a href="http://www.openfin.co" target="_blank">OpenFin</a> All Rights Reserved.
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

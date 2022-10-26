@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../prism.css">
+    <!-- GitBook Markdown CSS -->
+    <link rel="stylesheet" href="../../gitbook-style.css">
+    <title>Doc</title>
+</head>
+<body>
+<div data-server-rendered="true" class="source"><pre data-line="0" id="code" class="prettyprint source lang-javascript">  <code>
+    import ObjectBase from &quot;./ObjectBase.js&quot;;
+
+/**
+ * @param {number} x - The horizontal position of this rectangle
+ * @param {number} y - The vertical position of this rectangle
+ * @param {number} [width=100] - The width of the rectangle.
+ * @param {number} [height=100] - The height of the rectangle.
+ * @param {number | string} [fillColor=0xffffff] - The color the rectangle will be filled with, i.e. 0xff0000 for red.
+ * @param {number | string} [strokeColor=0x000000] - The color of the border of the rectangle, i.e. 0x00ff00 for green.
+ * 
+ * @classdesc
+ * The Rectangle Shape is a 2D Object. 
+ * Its possible to set a rounder corner radius.
+ * 
+ * @example
+ * const rect = new Rectangle(400, 300, 75, 50, &quot;#ff0000&quot;, 0x00ff00);
+ * 
+ * @class Rectangle
+ * @extends Objects.ObjectBase
+ * @constructors
+ * @memberof Objects
+ */
+export default class Rectangle extends ObjectBase {
+	constructor(x, y, width = 100, height = 100, fillColor = &quot;#ffffff&quot;, strokeColor = &quot;#000000&quot;) {
+		super(x, y, fillColor, strokeColor);
+
+		this.width = width;
+		this.height = height;
+	}
+
+	/**
+	 * @description
+	 * Sets the X position of the rectangle.
+	 * 
+	 * @param {number} x - The horizontal position of this Rectangle in the world.
+	 * @memberof Objects.Rectangle
+	 */
+	set x(x) { this.setX(x); }
+
+	/**
+	 * @description
+	 * Gets the Y position of the rectangle.
+	 * 
+	 * @param {number} y - The vertical position of this Rectangle in the world.
+	 * @memberof Objects.Rectangle
+	 */
+	set y(y) { this.setY(y); }
+
+	/**
+	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	get x() { return this._x - this.width * this.origin.x * this.scale.x; }
+
+	/**
+	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	get y() { return this._y - this.height * this.origin.y * this.scale.y; }
+
+
+	/**
+	 * @description
+	 * Returns the bottom side position of the rectangle.
+	 * 
+	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getBottom() { return this.y + this.height; }
+
+	/**
+	 * @description
+	 * Returns the right side position of the rectangle.
+	 * 
+	 * 
+	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getRight() { return this.x + this.width; }
+
+	/**
+	 * @description
+	 * Returns the center X position of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterX(); // 27.5
+	 * 
+	 * @returns {number} The horizontal position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getCenterX() { return this.x + this.width / 2; }
+
+	/**
+	 * @description
+	 * Returns the center Y position of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setOrigin(0.5).getCenterY(); // 27.5
+	 * 
+	 * @returns {number} The vertical position of this Rectangle in the world relative to the origin.
+	 * @memberof Objects.Rectangle
+	 */
+	getCenterY() { return this.y + this.height / 2; }
+
+	/**
+	 * @description
+	 * Sets the width of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setWidth(200);
+	 * 
+	 * @param {number} width - The new width of this Rectangle.
+	 * @returns {Rectangle} This Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	setWidth(width) {
+		this.setSize(width, this.height);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Sets the height of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setHeight(200);
+	 * 
+	 * @param {number} height - The new height of this Rectangle.
+	 * @returns {Rectangle} This Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	setHeight(height) {
+		this.setSize(this.width, height);
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Sets the size of the rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(10, 10, 100, 100).setSize(50, 50);
+	 * 
+	 * @param {number} width - The new width of this Rectangle.
+	 * @param {number} height - The new height of this Rectangle.
+	 * @returns {Rectangle} This Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	setSize(width, height = width) {
+		this.width = width;
+		this.height = height;
+		return this;
+	}
+
+	/**
+	 * @description
+	 * Gets the bounding box of this Rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(0, 0).getBoundingBox(); // { x: 0, y: 0, width: 100, height: 100 }
+	 * 
+	 * @returns {Object} The bounding box of this Rectangle.
+	 * @memberof Objects.Rectangle
+	 */
+	getBounds() { return { x: this.x, y: this.y, width: this.width, height: this.height }; }
+
+	/**
+	 * @description
+	 * Gets the area of this Rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(0, 0, 100, 100).getArea(); // 10000
+	 * 
+	 * @returns {number} The area of this Rectangle.
+	 * @memberof Objects.Rectangle
+	 * @readonly
+	 */
+	getArea() { return this.width * this.height; }
+
+	/**
+	 * @description
+	 * Gets the perimeter of this Rectangle.
+	 * 
+	 * @example
+	 * new Rectangle(0, 0, 100, 100).getPerimeter(); // 200
+	 * 
+	 * @returns {number} The perimeter of this Rectangle.
+	 * @memberof Objects.Rectangle
+	 * @readonly
+	 */
+	getPerimeter() { return 2 * (this.width + this.height); }
+}
+
+  </code>
+</pre></div>
+<!-- Optional JavaScript -->
+<script>
+  //fix intend for code tag
+  document.querySelectorAll('pre').forEach(node => {
+    if (node.childNodes[0].nodeName === '#text')
+      node.childNodes[0].parentNode.removeChild(node.childNodes[0])
+  })
+  document.querySelectorAll('code').forEach(node => node.textContent = node.textContent.trim())
+</script>
+
+<script src="../../prism.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

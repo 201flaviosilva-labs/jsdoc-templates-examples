@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../prism.css">
+    <!-- GitBook Markdown CSS -->
+    <link rel="stylesheet" href="../../gitbook-style.css">
+    <title>Doc</title>
+</head>
+<body>
+<div data-server-rendered="true" class="source"><pre data-line="0" id="code" class="prettyprint source lang-javascript">  <code>
+    /**
+ * Change a given text to a camelCase text based
+ * @see {@link https://en.wikipedia.org/wiki/Camel_case}
+ * 
+ * @example stringToCamelCase(&quot;beep&quot;); // beep
+ * @example stringToCamelCase(&quot;Beep&quot;); // beep
+ * @example stringToCamelCase(&quot;beep boop&quot;); // beepBoop
+ * @example stringToCamelCase(&quot;beep Boop&quot;); // beepBoop
+ * 
+ * @param {string} str - the text to transform
+ * @returns {string}
+ * 
+ * @function stringToCamelCase
+ */
+export function stringToCamelCase(str) { return str.replace(/\s(.)/g, ($1) =&gt; $1.toUpperCase()); }
+
+/**
+ * Change a given camelCase text to a normal text
+ * @see {@link https://en.wikipedia.org/wiki/Camel_case}
+ * 
+ * @example camelCaseToNormal(&quot;beep&quot;); // beep
+ * @example camelCaseToNormal(&quot;Beep&quot;); // beep
+ * @example camelCaseToNormal(&quot;beep boop&quot;); // boop beep
+ * @example camelCaseToNormal(&quot;Beep Boop&quot;); // boop beep
+ * 
+ * @param {string} str - the text to transform
+ * @returns {string}
+ * 
+ * @function camelCaseToNormal
+ */
+export function camelCaseToNormal(str) { return str.replace(/([A-Z])/g, ($1) =&gt; &quot; &quot; + $1.toLowerCase()); }
+
+  </code>
+</pre></div>
+<!-- Optional JavaScript -->
+<script>
+  //fix intend for code tag
+  document.querySelectorAll('pre').forEach(node => {
+    if (node.childNodes[0].nodeName === '#text')
+      node.childNodes[0].parentNode.removeChild(node.childNodes[0])
+  })
+  document.querySelectorAll('code').forEach(node => node.textContent = node.textContent.trim())
+</script>
+
+<script src="../../prism.js"></script>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

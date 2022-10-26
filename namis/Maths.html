@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Maths - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/custom.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav id="nav">
+    <h3 class="group-title"><a href="index.html">&#x3C; Home &#x3E;</a></h3><input class="search" placeholder="Search" type="text"><div class="list"><h3 class="group-title">Classes</h3><ul><li><a href="FIFO.html" class="className">FIFO</a><ul class='methods'><li data-type='method'><a href="FIFO.html#add" class="methodName">add</a></li><li data-type='method'><a href="FIFO.html#remove" class="methodName">remove</a></li></ul></li><li><a href="LIFO.html" class="className">LIFO</a><ul class='methods'><li data-type='method'><a href="LIFO.html#add" class="methodName">add</a></li><li data-type='method'><a href="LIFO.html#remove" class="methodName">remove</a></li></ul></li><li><a href="Objects.Circle.html" class="className">Circle</a><ul class='methods'><li data-type='method'><a href="Objects.Circle.html#.getBottom" class="methodName">getBottom</a></li><li data-type='method'><a href="Objects.Circle.html#.getBounds" class="methodName">getBounds</a></li><li data-type='method'><a href="Objects.Circle.html#.getLeft" class="methodName">getLeft</a></li><li data-type='method'><a href="Objects.Circle.html#.getRight" class="methodName">getRight</a></li><li data-type='method'><a href="Objects.Circle.html#.getTop" class="methodName">getTop</a></li><li data-type='method'><a href="Objects.Circle.html#.setRadius" class="methodName">setRadius</a></li></ul></li><li><a href="Objects.ObjectBase.html" class="className">ObjectBase</a><ul class='methods'><li data-type='method'><a href="Objects.ObjectBase.html#.setAngle" class="methodName">setAngle</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setFillColor" class="methodName">setFillColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setName" class="methodName">setName</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setPosition" class="methodName">setPosition</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setRotation" class="methodName">setRotation</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScale" class="methodName">setScale</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleX" class="methodName">setScaleX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setScaleY" class="methodName">setScaleY</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeColor" class="methodName">setStrokeColor</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setStrokeWidth" class="methodName">setStrokeWidth</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setVisible" class="methodName">setVisible</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setX" class="methodName">setX</a></li><li data-type='method'><a href="Objects.ObjectBase.html#.setY" class="methodName">setY</a></li></ul></li><li><a href="Objects.Rectangle.html" class="className">Rectangle</a><ul class='methods'><li data-type='method'><a href="Objects.Rectangle.html#.getArea" class="methodName">getArea</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBottom" class="methodName">getBottom</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getBounds" class="methodName">getBounds</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterX" class="methodName">getCenterX</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getCenterY" class="methodName">getCenterY</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getPerimeter" class="methodName">getPerimeter</a></li><li data-type='method'><a href="Objects.Rectangle.html#.getRight" class="methodName">getRight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setHeight" class="methodName">setHeight</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setSize" class="methodName">setSize</a></li><li data-type='method'><a href="Objects.Rectangle.html#.setWidth" class="methodName">setWidth</a></li></ul></li></ul><h3 class="group-title">Namespaces</h3><ul><li><a href="Maths.html" class="className">Maths</a><ul class='methods'><li data-type='method'><a href="Maths.html#.factorial" class="methodName">factorial</a></li><li data-type='method'><a href="Maths.html#.isEven" class="methodName">isEven</a></li><li data-type='method'><a href="Maths.html#.isOdd" class="methodName">isOdd</a></li><li data-type='method'><a href="Maths.html#.sum" class="methodName">sum</a></li></ul></li><li><a href="Objects.html" class="className">Objects</a></li></ul><h3>Global</h3><ul><li><a href="global.html#camelCaseToNormal">camelCaseToNormal</a></li><li><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li><li><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li><li><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated</a></li><li><a href="global.html#snakeCaseToNormal">snakeCaseToNormal</a></li><li><a href="global.html#stringToCamelCase">stringToCamelCase</a></li><li><a href="global.html#stringToCapitalize">stringToCapitalize</a></li><li><a href="global.html#stringToKebabCase">stringToKebabCase</a></li><li><a href="global.html#stringToScreamingSnakeCase">stringToScreamingSnakeCase</a></li><li><a href="global.html#stringToSnakeCase">stringToSnakeCase</a></li></ul></div>
+</nav>
+
+<div id="main">
+    
+        <h1 class="page-title">Maths</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Maths
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Just some math functions</p></div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Maths_index.js.html">Maths/index.js</a>, <a href="Maths_index.js.html#line5">line 5</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".factorial"><span class="type-signature">(static) </span>factorial<span class="signature">(number)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>The factorial of a non-negative​ number is computed as the product of all integers between 1 and the number itself</p>
+</div>
+
+
+
+
+
+
+
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the number to factoring</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Maths_factorial.js.html">Maths/factorial.js</a>, <a href="Maths_factorial.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Factorial">https://en.wikipedia.org/wiki/Factorial</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    <pre class="prettyprint"><code>factorial(0); // 0</code></pre>
+
+    <pre class="prettyprint"><code>factorial(1); // 1</code></pre>
+
+    <pre class="prettyprint"><code>factorial(1.2); // 0.23999999999999994</code></pre>
+
+    <pre class="prettyprint"><code>factorial(4); // 24</code></pre>
+
+    <pre class="prettyprint"><code>factorial(6); // 720</code></pre>
+
+    <pre class="prettyprint"><code>factorial(10); // 3628800</code></pre>
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>the result</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+        
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isEven"><span class="type-signature">(static) </span>isEven<span class="signature">(number)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Check is the given number is a EVEN number</p>
+</div>
+
+
+
+
+
+
+
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The number to check</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Maths_isEvenOdd.js.html">Maths/isEvenOdd.js</a>, <a href="Maths_isEvenOdd.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    <pre class="prettyprint"><code>isEven(1); // false
+isEven(2); // true</code></pre>
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+        
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isOdd"><span class="type-signature">(static) </span>isOdd<span class="signature">(number)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Check is the given number is a ODD number</p>
+</div>
+
+
+
+
+
+
+
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>number</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The number to check</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Maths_isEvenOdd.js.html">Maths/isEvenOdd.js</a>, <a href="Maths_isEvenOdd.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    <pre class="prettyprint"><code>isOdd(1); // true
+isOdd(2); // false</code></pre>
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">boolean</span>
+
+
+    </dd>
+</dl>
+
+        
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".sum"><span class="type-signature">(static) </span>sum<span class="signature">(&hellip;numbers)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Calculates a sum of all givens numbers</p>
+</div>
+
+
+
+
+
+
+
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                    &lt;repeatable><br>
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the numbers to sum</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Maths_sum.js.html">Maths/sum.js</a>, <a href="Maths_sum.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    <pre class="prettyprint"><code>sum(1,1); // 2</code></pre>
+
+    <pre class="prettyprint"><code>sum(1,2,-5,2.4,-6.5); // -6.1</code></pre>
+
+    <pre class="prettyprint"><code>sum(1,2,3,4,5,6,7,8,9,0); // 45</code></pre>
+
+    <pre class="prettyprint"><code>sum(-1,2,3,4,5,6,7,8,-9); // 25</code></pre>
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+        
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed, 26 Oct 2022 13:43:26 GMT using
+    <a href="https://www.npmjs.com/package/namis">Namis</a> theme.
+</footer>
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.nicescroll/3.6.0/jquery.nicescroll.min.js"></script>
+<script src="scripts/namis.search.jquery.js"></script>
+<script>prettyPrint();
+(function($){
+    $('nav').niceScroll({
+        cursorwidth: 7,
+        hwacceleration: true,
+        cursorcolor: "#036564",
+        cursorborder: "1px solid #036564"
+    });
+
+    $('html').niceScroll({
+        cursorwidth: 10,
+        hwacceleration: true,
+        smoothscroll: true,
+        cursorminheight: 32,
+        enablemousewheel: true, // nicescroll can manage mouse wheel events
+        enablekeyboard: true // nicescroll can manage keyboard events
+        ,cursorcolor: "#033649"
+    });
+
+    $('#nav').search(['className', 'methodName']);
+})(jQuery);
+</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
