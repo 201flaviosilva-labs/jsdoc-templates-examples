@@ -18,6 +18,7 @@ Just testing some JSDoc templates, check here: https://201flaviosilva-labs.githu
 | Baseline                 | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/jsdocBaseline/)          | [GitHub](https://github.com/hegemonic/jsdoc-baseline)       | `npm run jsdocBaseline`          |
 | LOKE JSDoc Theme         | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/lokeJsdocTheme/)         | [GitHub](https://github.com/LOKE/jsdoc-theme)               | `npm run lokeJsdocTheme`         |
 | Minami                   | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/minami/)                 | [GitHub](https://github.com/Nijikokun/minami)               | `npm run minami`                 |
+| Namis                    | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/namis/)                  | [GitHub](https://github.com/hungluu/namis)                  | `npm run namis`                  |
 | Tui.jsdoc Template       | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/TUIJSDocTemplate/)       | [GitHub](https://github.com/nhn/tui.jsdoc-template)         | `npm run TUIJSDocTemplate`       |
 | ub-jsdoc                 | [Demo](https://201flaviosilva-labs.github.io/jsdoc-templates-examples/ubJsdoc/)                | [GitHub](https://github.com/UnityBaseJS/ub-jsdoc)           | `npm run ubJsdoc`                |
 

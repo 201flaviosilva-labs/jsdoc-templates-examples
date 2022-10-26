@@ -1,0 +1,27 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./src"],
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true,
+    "systemName": "JSDoc Template Example",
+    "linenums": true,
+    "collapseSymbols": true
+  },
+  "opts": {
+    "destination": "build/namis",
+    "encoding": "utf8",
+    "verbose": true,
+    "recurse": true,
+    "readme": "README.md",
+    "template": "node_modules/namis"
+  }
+}

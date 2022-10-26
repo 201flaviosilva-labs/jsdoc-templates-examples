@@ -18,10 +18,11 @@
     "jsdocBaseline": "jsdoc -c ./JSDocConfigs/jsdocBaseline.json",
     "lokeJsdocTheme": "jsdoc -c ./JSDocConfigs/lokeJsdocTheme.json",
     "minami": "jsdoc -c ./JSDocConfigs/minami.json",
+    "namis": "jsdoc -c ./JSDocConfigs/namis.json",
     "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.json",
     "ubJsdoc": "jsdoc -c ./JSDocConfigs/ubJsdoc.json",
     "--": "echo 'build'",
-    "doc-all": "npm run jsDoc && npm run betterDocs && npm run braintreeJsdocTemplate && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run lokeJsdocTheme && npm run minami && npm run TUIJSDocTemplate && npm run ubJsdoc",
+    "doc-all": "npm run jsDoc && npm run betterDocs && npm run braintreeJsdocTemplate && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run lokeJsdocTheme && npm run minami && npm run namis && npm run TUIJSDocTemplate && npm run ubJsdoc",
     "build": "npm run clear && npm run doc-all && cp index.html build/"
   },
   "devDependencies": {
@@ -36,6 +37,7 @@
     "jsdoc-baseline": "^0.1.5",
     "loke-jsdoc-theme": "^2.1.0",
     "minami": "^1.2.3",
+    "namis": "^1.0.3",
     "tui-jsdoc-template": "^1.2.2",
     "ub-jsdoc": "^3.1.4"
   },
