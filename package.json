@@ -19,13 +19,15 @@
     "lokeJsdocTheme": "jsdoc -c ./JSDocConfigs/lokeJsdocTheme.json",
     "minami": "jsdoc -c ./JSDocConfigs/minami.json",
     "namis": "jsdoc -c ./JSDocConfigs/namis.json",
+    "pixiJsdocTemplate": "jsdoc -c ./JSDocConfigs/pixiJsdocTemplate.json",
     "TUIJSDocTemplate": "jsdoc -c ./JSDocConfigs/TUIJSDocTemplate.json",
     "ubJsdoc": "jsdoc -c ./JSDocConfigs/ubJsdoc.json",
     "--": "echo 'build'",
-    "doc-all": "npm run jsDoc && npm run betterDocs && npm run braintreeJsdocTemplate && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run lokeJsdocTheme && npm run minami && npm run namis && npm run TUIJSDocTemplate && npm run ubJsdoc",
+    "doc-all": "npm run jsDoc && npm run betterDocs && npm run braintreeJsdocTemplate && npm run cleanJsdocTheme && npm run docdash && npm run foodoc && npm run inkDocstrap && npm run jaguarjsJSDoc && npm run jsdocBaseline && npm run lokeJsdocTheme && npm run minami && npm run namis && npm run pixiJsdocTemplate && npm run TUIJSDocTemplate && npm run ubJsdoc",
     "build": "npm run clear && npm run doc-all && cp index.html build/"
   },
   "devDependencies": {
+    "@pixi/jsdoc-template": "^2.6.0",
     "better-docs": "^2.7.2",
     "braintree-jsdoc-template": "^3.3.0",
     "clean-jsdoc-theme": "^4.1.8",
