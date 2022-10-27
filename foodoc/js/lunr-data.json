@@ -529,6 +529,14 @@
           "rectangl",
           "rectangle.getperimet"
         ],
+        "Games.html": [
+          "complet",
+          "game",
+          "here",
+          "implement",
+          "logic",
+          "namespac"
+        ],
         "Objects.html": [
           "namespac",
           "object"
@@ -585,7 +593,7 @@
           "odd"
         ]
       },
-      "length": 52
+      "length": 53
     },
     "tokenStore": {
       "root": {
@@ -726,6 +734,35 @@
                     "Maths.html#.factorial": {
                       "ref": "Maths.html#.factorial",
                       "tf": 4.545454545454546
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "m": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "t": {
+                          "docs": {
+                            "Games.html": {
+                              "ref": "Games.html",
+                              "tf": 10
+                            }
+                          }
+                        }
+                      }
                     }
                   }
                 }
@@ -1672,6 +1709,20 @@
                 }
               }
             }
+          },
+          "a": {
+            "docs": {},
+            "m": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Games.html": {
+                    "ref": "Games.html",
+                    "tf": 1910
+                  }
+                }
+              }
+            }
           }
         },
         "c": {
@@ -1754,6 +1805,20 @@
               "docs": {},
               "p": {
                 "docs": {},
+                "l": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Games.html": {
+                          "ref": "Games.html",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                },
                 "u": {
                   "docs": {},
                   "t": {
@@ -2399,6 +2464,23 @@
                 }
               }
             }
+          },
+          "o": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "c": {
+                  "docs": {
+                    "Games.html": {
+                      "ref": "Games.html",
+                      "tf": 10
+                    }
+                  }
+                }
+              }
+            }
           }
         },
         "n": {
@@ -2425,6 +2507,10 @@
                           "list_namespace.html": {
                             "ref": "list_namespace.html",
                             "tf": 635
+                          },
+                          "Games.html": {
+                            "ref": "Games.html",
+                            "tf": 110
                           },
                           "Objects.html": {
                             "ref": "Objects.html",
@@ -4846,6 +4932,17 @@
                   }
                 }
               }
+            },
+            "r": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Games.html": {
+                    "ref": "Games.html",
+                    "tf": 10
+                  }
+                }
+              }
             }
           }
         },
@@ -5273,7 +5370,7 @@
           }
         }
       },
-      "length": 473
+      "length": 479
     },
     "corpusTokens": [
       "1",
@@ -5302,6 +5399,7 @@
       "circle.x",
       "class",
       "color",
+      "complet",
       "comput",
       "corner",
       "current",
@@ -5321,6 +5419,7 @@
       "fill",
       "first",
       "function",
+      "game",
       "get",
       "getarea",
       "getbottom",
@@ -5334,7 +5433,9 @@
       "given",
       "global",
       "height",
+      "here",
       "horizont",
+      "implement",
       "index",
       "integ",
       "iseven",
@@ -5349,6 +5450,7 @@
       "list",
       "list:class",
       "list:namespac",
+      "logic",
       "lt;static&gt",
       "math",
       "maths.factori",
@@ -5958,6 +6060,17 @@
       "tags": "Objects.Rectangle.getPerimeter Rectangle.getPerimeter getPerimeter",
       "summary": "",
       "description": "Gets the perimeter of this Rectangle."
+    },
+    "Games.html": {
+      "id": "Games.html",
+      "kind": "namespace",
+      "title": "Games",
+      "longname": "Games",
+      "name": "Games",
+      "tags": "Games",
+      "summary": "",
+      "description": "Here are some complete games logics implemented",
+      "body": ""
     },
     "Objects.html": {
       "id": "Objects.html",

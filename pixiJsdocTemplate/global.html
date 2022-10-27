@@ -40,6 +40,40 @@
     <ul class="list">
     
     
+        <li class="item" data-name="Games">
+            <span class="title namespace ">
+                
+                <span class="namespaceTag">
+                    <span class="glyphicon glyphicon-folder-open"></span>
+                </span>
+                
+                
+                    <a href="Games.html">Games</a>
+                
+            </span>
+            
+            <ul class="members itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
         <li class="item" data-name="Maths">
             <span class="title namespace ">
                 
@@ -151,6 +185,8 @@
                 <li class="parent  " data-name="capitalizeToNormal"><a href="global.html#capitalizeToNormal">capitalizeToNormal</a></li>
             
                 <li class="parent  " data-name="kebabCaseToNormal"><a href="global.html#kebabCaseToNormal">kebabCaseToNormal</a></li>
+            
+                <li class="parent  " data-name="rockPaperScissor"><a href="global.html#rockPaperScissor">rockPaperScissor</a></li>
             
                 <li class="parent  " data-name="screamingSnakeCaseToNormal"><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal</a></li>
             
@@ -1004,6 +1040,215 @@
 
     
     <pre class="prettyprint"><code>kebabCaseToNormal("Beep-Boop"); // Beep Boop</code></pre>
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="rockPaperScissor">
+            <a class="share-icon" href="#rockPaperScissor"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                rockPaperScissor
+            </span>
+            <span class="signature">(player1, player2)</span><span class="type-signature">number</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Lets play a game. Rock Paper Scissors.</p>
+<p>This function will check which is the winner of the game, based on the options:</p>
+<ul>
+<li>&quot;r&quot; for rock;</li>
+<li>&quot;p&quot; for paper;</li>
+<li>&quot;s&quot; for scissor;</li>
+</ul>
+<p>And determines the winner:</p>
+<ul>
+<li>0 for draw</li>
+<li>1 for player 1</li>
+<li>2 for player 2</li>
+</ul>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>player1</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the player 1 option</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>player2</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the player 2 option</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        number
+                        
+                    
+            </td>
+            <td class="description last"></td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+        <h5>Examples</h5>
+        
+
+    
+    <pre class="prettyprint"><code>rockPaperScissor("p", "p"); // 0</code></pre>
+    
+
+
+    
+    <pre class="prettyprint"><code>rockPaperScissor("r", "r"); // 0</code></pre>
+    
+
+
+    
+    <pre class="prettyprint"><code>rockPaperScissor("s", "s"); // 0</code></pre>
+    
+
+
+    
+    <pre class="prettyprint"><code>rockPaperScissor("p", "r"); // 1</code></pre>
+    
+
+
+    
+    <pre class="prettyprint"><code>rockPaperScissor("s", "r"); // 2</code></pre>
     
 
     
@@ -2387,7 +2632,7 @@
 
         <footer class="content-size">
             <div class="footer">
-                Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Wed Oct 26 2022 13:43:28 GMT+0000 (Coordinated Universal Time)
+                Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Thu Oct 27 2022 16:08:17 GMT+0000 (Coordinated Universal Time)
             </div>
         </footer>
     </div>

@@ -39,13 +39,16 @@
                     <dt><a href="global.html#kebabCaseToNormal">kebabCaseToNormal(str)</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal(str)</a></dt>
+                    <dt><a href="global.html#rockPaperScissor">rockPaperScissor(player1, player2)</a></dt>
                     <dd>
                     </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
+                    <dt><a href="global.html#screamingSnakeCaseToNormal">screamingSnakeCaseToNormal(str)</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="global.html#screamingSnakeCaseToNormalDeprecated">screamingSnakeCaseToNormalDeprecated(str)</a></dt>
                     <dd>
                     </dd>
@@ -55,13 +58,13 @@
                     <dt><a href="global.html#stringToCamelCase">stringToCamelCase(str)</a></dt>
                     <dd>
                     </dd>
-                    <dt><a href="global.html#stringToCapitalize">stringToCapitalize(str)</a></dt>
-                    <dd>
-                    </dd>
                   </dl>
                 </div>
                 <div class="summary-column">
                   <dl class="dl-summary-callout">
+                    <dt><a href="global.html#stringToCapitalize">stringToCapitalize(str)</a></dt>
+                    <dd>
+                    </dd>
                     <dt><a href="global.html#stringToKebabCase">stringToKebabCase(str)</a></dt>
                     <dd>
                     </dd>
@@ -241,6 +244,89 @@
                 <dt>Returns</dt>
                 <dd>
                   <p><code>string</code> </p>
+                </dd>
+              </dl>
+              <h3 id="rockPaperScissor"><span class="symbol-name">rockPaperScissor</span><span class="signature"><span class="signature-params">(player1, player2)</span>&nbsp;&rarr; <span class="signature-returns"> number</span></span></h3>
+              <p>Lets play a game. Rock Paper Scissors.</p>
+              <p>This function will check which is the winner of the game, based on the options:</p>
+              <ul>
+                <li>&quot;r&quot; for rock;</li>
+                <li>&quot;p&quot; for paper;</li>
+                <li>&quot;s&quot; for scissor;</li>
+              </ul>
+              <p>And determines the winner:</p>
+              <ul>
+                <li>0 for draw</li>
+                <li>1 for player 1</li>
+                <li>2 for player 2</li>
+              </ul>
+              <section>
+                <h4>
+                  Examples
+                </h4>
+                <div>
+                  <pre class="prettyprint"><code>rockPaperScissor(&quot;p&quot;, &quot;p&quot;); // 0</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>rockPaperScissor(&quot;r&quot;, &quot;r&quot;); // 0</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>rockPaperScissor(&quot;s&quot;, &quot;s&quot;); // 0</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>rockPaperScissor(&quot;p&quot;, &quot;r&quot;); // 1</code></pre>
+                </div>
+                <div>
+                  <pre class="prettyprint"><code>rockPaperScissor(&quot;s&quot;, &quot;r&quot;); // 2</code></pre>
+                </div>
+              </section>
+              <section>
+                <h4>Parameters</h4>
+                <table class="jsdoc-details-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Type</th>
+                      <th>Optional</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>player1</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the player 1 option</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>player2</p>
+                      </td>
+                      <td>
+                        <p>string</p>
+                      </td>
+                      <td>
+                        <p>&nbsp;</p>
+                      </td>
+                      <td>
+                        <p>the player 2 option</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <dl class="dl-compact">
+                <dt>Returns</dt>
+                <dd>
+                  <p><code>number</code> </p>
                 </dd>
               </dl>
               <h3 id="screamingSnakeCaseToNormal"><span class="symbol-name">screamingSnakeCaseToNormal</span><span class="signature"><span class="signature-params">(str)</span>&nbsp;&rarr; <span class="signature-returns"> string</span></span></h3>
@@ -675,7 +761,7 @@
   <footer id="jsdoc-footer" class="jsdoc-footer">
     <div id="jsdoc-footer-container">
       <p>
-        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.11 on October 26, 2022.
+        Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a> 3.6.11 on October 27, 2022.
       </p>
     </div>
   </footer>
