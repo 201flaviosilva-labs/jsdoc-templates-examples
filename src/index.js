@@ -1,4 +1,5 @@
 import Objects from "./2DObjects/Objects";
+import * as Games from "./Games/index.js";
 import * as Maths from "./Maths/index.js";
 
 import { FIFO } from "./FIFO";
@@ -12,6 +13,7 @@ import { stringToSnakeCase, snakeCaseToNormal } from "./snakeCase.js";
 
 export {
 	Objects,
+	Games,
 	Maths,
 
 	FIFO,
